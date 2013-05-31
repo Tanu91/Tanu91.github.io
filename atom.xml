@@ -4,7 +4,7 @@
   <title><![CDATA[Relax -Crazy]]></title>
   <link href="http://Tanu91.github.io/atom.xml" rel="self"/>
   <link href="http://Tanu91.github.io/"/>
-  <updated>2013-05-31T16:48:04+05:30</updated>
+  <updated>2013-06-01T00:14:33+05:30</updated>
   <id>http://Tanu91.github.io/</id>
   <author>
     <name><![CDATA[Tanu]]></name>
@@ -18,7 +18,11 @@
     <link href="http://Tanu91.github.io/blog/2013/05/31/relax-crazy/"/>
     <updated>2013-05-31T14:50:00+05:30</updated>
     <id>http://Tanu91.github.io/blog/2013/05/31/relax-crazy</id>
-    <content type="html"><![CDATA[<p>this is a blog for crazy bloggers to relax</p>
+    <content type="html"><![CDATA[<p>this is a blog for crazy bloggers to relax
+<img src="http://placekitten.com/890/280">
+<img class="left" src="http://placekitten.com/320/250" title="Place Kitten #2" >
+<img class="right" src="http://placekitten.com/300/500" width="150" height="250" title="Place Kitten #3" >
+<img class="right" src="http://placekitten.com/300/500" width="150" height="250" title="Place Kitten #4" alt="An image of a very cute kitten"></p>
 ]]></content>
   </entry>
   

@@ -7,8 +7,12 @@ categories:
 ---
 this is a blog for crazy bloggers to relax
 {% img http://placekitten.com/890/280 %}
-{% img left http://placekitten.com/320/250 Place Kitten #2 %}
-{% img right http://placekitten.com/300/500 150 250 Place Kitten #3 %}
-{% img right http://placekitten.com/300/500 150 250 'Place Kitten #4' 'An image of a very cute kitten' %}
 
-{% video http://s3.imathis.com/video/zero-to-fancy-buttons.mp4 640 320 http://s3.imathis.com/video/zero-to-fancy-buttons.png %}
+``` ruby Discover if a number is prime http://www.noulakaz.net/weblog/2007/03/18/a-regular-expression-to-check-for-prime-numbers/ Source Article
+class Fixnum
+  def prime?
+    ('1' * self) !~ /^1?$|^(11+?)\1+$/
+  end
+end
+
+

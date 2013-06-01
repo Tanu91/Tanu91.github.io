@@ -3,12 +3,17 @@
 # ----------------------- #
 
 url: http://Tanu91.github.io
-<<<<<<< HEAD
+
+
 title: My Octopress Blog
-=======
+
 
 title: relax-crazy
->>>>>>> 8d6b9fe872c602f19d6da2baab57d09e6e8c4785
+
+
+
+title: Relax-crazy
+
 subtitle: A blogging framework for hackers.
 author: Your Name
 title: Relax -Crazy

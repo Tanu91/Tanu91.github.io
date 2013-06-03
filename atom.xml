@@ -4,7 +4,7 @@
   <title><![CDATA[Relax -Crazy]]></title>
   <link href="http://Tanu91.github.io/atom.xml" rel="self"/>
   <link href="http://Tanu91.github.io/"/>
-  <updated>2013-06-04T00:23:39+05:30</updated>
+  <updated>2013-06-04T00:30:47+05:30</updated>
   <id>http://Tanu91.github.io/</id>
   <author>
     <name><![CDATA[Tanu]]></name>
@@ -31,12 +31,15 @@ GIT is a distributed Version Control System(VCS). This allows non-linear develop
 
 <p> sudo &ndash;>  for administrative previlages.</p>
 
-<p>apt-get-> Package Installer, puts stuff from repositries and install them</p>
+<p>apt-get-> Package Installer, puts stuff from repositries and install them.</p>
 
 <p>Now it&rsquo;s time to configure your settings. To do this you need to open an app called Terminal.</p>
 
-<p>*USERNAME
-   First you need to tell git your name, so that it can properly label the commits you make.</p>
+<ul>
+<li>USERNAME :&ndash;
+  First you need to tell git your name, so that it can properly label the commits you make.</li>
+</ul>
+
 
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
@@ -44,8 +47,11 @@ GIT is a distributed Version Control System(VCS). This allows non-linear develop
 </span><span class='line'>  # Sets the default name for git to use when you commit</span></code></pre></td></tr></table></div></figure>
 
 
-<p>*E-Mail
-   Git saves your email address into the commits you make. We use the email address to associate your commits with your GitHub account.</p>
+<ul>
+<li>E-Mail :&ndash;
+  Git saves your email address into the commits you make. We use the email address to associate your commits with your GitHub account.</li>
+</ul>
+
 
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
@@ -53,7 +59,10 @@ GIT is a distributed Version Control System(VCS). This allows non-linear develop
 </span><span class='line'>  # Sets the default email for git to use when you commit</span></code></pre></td></tr></table></div></figure>
 
 
-<p>*To see all settings</p>
+<ul>
+<li>To see all settings :&ndash;</li>
+</ul>
+
 
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>$git config --list</span></code></pre></td></tr></table></div></figure>
@@ -91,7 +100,7 @@ curl is a client to get document/file or send to server using any of supported p
 <p>Gems contain package information along with files to install RubyGems.It is a package manager which became part of the standard library in Ruby 1.9. It allows developers to search,install and build gems, among other features. All of this is done by using the gem command-line utility.</p>
 
 <ul>
-<li>Run ruby &mdash;version to be sure you’re using Ruby 1.9.3. If you’re having trouble, run the following command on your terminal to set your default version of ruby-1.9.3</li>
+<li>Run ruby &ndash; -version to be sure you’re using Ruby 1.9.3. If you’re having trouble, run the following command on your terminal to set your default version of ruby-1.9.3</li>
 </ul>
 
 
@@ -107,10 +116,12 @@ curl is a client to get document/file or send to server using any of supported p
 </pre></td><td class='code'><pre><code class=''><span class='line'>git clone git://github.com/imathis/octopress.git octopress</span></code></pre></td></tr></table></div></figure>
 
 
-<pre><code>  The above command replaces octopress with username.github.com.
+<p>The above command replaces octopress with username.github.com.</p>
 
-* Next we need to change current working directory to octopress.
-</code></pre>
+<ul>
+<li>Next we need to change current working directory to octopress.</li>
+</ul>
+
 
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
@@ -118,20 +129,20 @@ curl is a client to get document/file or send to server using any of supported p
 </span><span class='line'>  ruby --version  # Should report Ruby 1.9.3</span></code></pre></td></tr></table></div></figure>
 
 
-<pre><code>* Next, install dependencies.
+<ul>
+<li>Next, install dependencies.</li>
+</ul>
 
-  Using Bundler to manage your gem’s dependencies is also pretty easy.
-  Bundler is a program for managing gem dependencies in your Ruby projects. With Bundler you can specify which gems your program needs.
-</code></pre>
+
+<p>Using Bundler to manage your gem’s dependencies is also pretty easy.Bundler is a program for managing gem dependencies in your Ruby projects. With Bundler you can specify which gems your program needs.</p>
 
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>$gem install bundler</span></code></pre></td></tr></table></div></figure>
 
 
-<pre><code>  This should be the only gem you need to install yourself should all your programs' dependencies be managed by Bundler.
+<p>This should be the only gem you need to install yourself should all your programs&#8217; dependencies be managed by Bundler.</p>
 
-  Now,Install the dependencies specified in your Gemfile 
-</code></pre>
+<p>Now,Install the dependencies specified in your Gemfile</p>
 
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>$bundle install</span></code></pre></td></tr></table></div></figure>

@@ -14,7 +14,7 @@ GIT is a distributed Version Control System(VCS). This allows non-linear develop
 Step 1: Install Git
 	
 	{% codeblock %}
-	$sudo apt-get insatll git
+	$ sudo apt-get insatll git
 	{% endcodeblock %}
 	
 	  sudo-  for administrative previlages.
@@ -26,7 +26,7 @@ Step 1: Install Git
 	     First you need to tell git your name, so that it can properly label the commits you make.
 	
 	{% codeblock %}
-	$git config --global user.name "Your Name Here"
+	$ git config --global user.name "Your Name Here"
 	# Sets the default name for git to use when you commit
 	{% endcodeblock %}
 	

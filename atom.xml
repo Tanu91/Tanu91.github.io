@@ -4,7 +4,7 @@
   <title><![CDATA[Relax -Crazy]]></title>
   <link href="http://Tanu91.github.io/atom.xml" rel="self"/>
   <link href="http://Tanu91.github.io/"/>
-  <updated>2013-06-04T00:19:18+05:30</updated>
+  <updated>2013-06-04T00:23:39+05:30</updated>
   <id>http://Tanu91.github.io/</id>
   <author>
     <name><![CDATA[Tanu]]></name>
@@ -29,16 +29,14 @@ GIT is a distributed Version Control System(VCS). This allows non-linear develop
 </pre></td><td class='code'><pre><code class=''><span class='line'>$ sudo apt-get insatll git</span></code></pre></td></tr></table></div></figure>
 
 
-<p> sudo-  for administrative previlages.
-apt-get &ndash; Package Installer, puts stuff from repositries and install them</p>
+<p> sudo &ndash;>  for administrative previlages.</p>
 
-<p> Now it&rsquo;s time to configure your settings. To do this you need to open an app called Terminal.</p>
+<p>apt-get-> Package Installer, puts stuff from repositries and install them</p>
 
-<ul>
-<li>USERNAME
- First you need to tell git your name, so that it can properly label the commits you make.</li>
-</ul>
+<p>Now it&rsquo;s time to configure your settings. To do this you need to open an app called Terminal.</p>
 
+<p>*USERNAME
+   First you need to tell git your name, so that it can properly label the commits you make.</p>
 
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
@@ -46,11 +44,8 @@ apt-get &ndash; Package Installer, puts stuff from repositries and install them<
 </span><span class='line'>  # Sets the default name for git to use when you commit</span></code></pre></td></tr></table></div></figure>
 
 
-<ul>
-<li>E-Mail
- Git saves your email address into the commits you make. We use the email address to associate your commits with your GitHub account.</li>
-</ul>
-
+<p>*E-Mail
+   Git saves your email address into the commits you make. We use the email address to associate your commits with your GitHub account.</p>
 
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
@@ -58,10 +53,7 @@ apt-get &ndash; Package Installer, puts stuff from repositries and install them<
 </span><span class='line'>  # Sets the default email for git to use when you commit</span></code></pre></td></tr></table></div></figure>
 
 
-<ul>
-<li>To see all settings</li>
-</ul>
-
+<p>*To see all settings</p>
 
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>$git config --list</span></code></pre></td></tr></table></div></figure>

@@ -14,7 +14,7 @@ GIT is a distributed Version Control System(VCS). This allows non-linear develop
 Step 1: Install Git
 	
 	{% codeblock %}
-	sudo apt-get insatll git
+	$sudo apt-get insatll git
 	{% endcodeblock %}
 	
 	  sudo-  for administrative previlages.
@@ -26,42 +26,59 @@ Step 1: Install Git
 	    First you need to tell git your name, so that it can properly label the commits you make.
 	
 	{% codeblock %}
-	git config --global user.name "Your Name Here"
+	$git config --global user.name "Your Name Here"
 	# Sets the default name for git to use when you commit
 	{% endcodeblock %}
 	
 	* E-Mail
 	   Git saves your email address into the commits you make. We use the email address to associate your commits with your GitHub account.
 	{% codeblock %}
-	git config --global user.email "your_email@example.com"
+	$git config --global user.email "your_email@example.com"
 	# Sets the default email for git to use when you commit
 	{% endcodeblock %}
 
 	* To see all settings
 	
 	{% codeblock %}
-	git config --list
+	$git config --list
 	{% endcodeblock %}
 	
-Step 1: Install RVM
+Step 2: Install RVM
 
 	
 	RVM is Ruby Version Manager. It allows us to install and manage different versions and implementations of ruby on one computer including ability to manage different sets of Ruby gems on each.Thus, allowing to test our application with different versions of ruby setups.
+	
 	Run the following command from your terminal.Be sure to follow any subsequent instructions as guided by the installation process.
 
-	{% codeblock %}
-	curl -L https://get.rvm.io | bash -s stable --ruby
-	{% endcodeblock %}
-
+	
+	The above command will install both RVM and the latest version of Ruby.
 	curl is a client to get document/file or send to server using any of supported protocols.
 
 	If the above command produces an error, run following command from ypur terminal to achieve the same.
 	
-	
 	{% codeblock %}
 	$wget --no-check-certificate https://raw.github.com/joshfng/railsready/master/railsready.sh && bash railsready.sh
 	{% endcodeblock %}
-	
 
+Step 3: Install Ruby 1.9.3	
+	
+	{% codeblock %}
+	rvm install 1.9.3
+	rvm use 1.9.3
+	rvm rubygems latest
+	{% endcodeblock %}
+
+	Gems contain package information along with files to install.
+	RubyGems. It is a package manager which became part of the standard library in Ruby 1.9. It allows developers to search, install and build gems, among other features. All of this is done by using the gem command-line utility.
+
+	*Run ruby --version to be sure you’re using Ruby 1.9.3. If you’re having trouble, run the following command on your terminal to set your default version of ruby-1.9.3
+
+	{% codeblock %}
+	$rvm --default use ruby-1.9.3-p429
+	{% endcodeblock %}
+
+
+
+	 
 
 

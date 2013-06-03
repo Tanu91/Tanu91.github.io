@@ -17,8 +17,8 @@ Step 1: Install Git
 	$ sudo apt-get insatll git
 	{% endcodeblock %}
 	
-	  sudo-  for administrative previlages.
-	 apt-get - Package Installer, puts stuff from repositries and install them 
+ sudo-  for administrative previlages.
+apt-get - Package Installer, puts stuff from repositries and install them 
 	
 	  Now it's time to configure your settings. To do this you need to open an app called Terminal.
 

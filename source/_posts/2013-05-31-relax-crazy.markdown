@@ -9,7 +9,7 @@ categories:
 
 
  You should be comfortable running shell commands and familiar with the basics of GIT.
-GIT is a distributed Version Control System(VCS). This allows non-linear development of projects and can handle large amount of data effectively by storing it on Local Server.
+GIT is a distributed Version Control System(VCS). This allows non-linear development of projects and can handle large amount of data effectively by storing it on Local Server. q25ssssaa
 
 Step 1: Install Git
 	

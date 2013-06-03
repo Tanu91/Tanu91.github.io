@@ -128,13 +128,13 @@ GIT is a distributed Version Control System(VCS). This allows non-linear develop
 </pre></td><td class='code'><pre><code class=''><span class='line'>sudo apt-get insatll git</span></code></pre></td></tr></table></div></figure>
 
 
-<pre><code>sudo- for administrative previlages.
-apt-get - Package Installer, puts stuff from repositries and        install them 
+<pre><code>  sudo-  for administrative previlages.
+apt-get - Package Installer, puts stuff from repositries and install them 
 
 Now it's time to configure your settings. To do this you need to open an app called Terminal.
 
 USERNAME
-First you need to tell git your name, so that it can properly label the commits you make.
+    First you need to tell git your name, so that it can properly label the commits you make.
 </code></pre>
 
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
@@ -144,13 +144,20 @@ First you need to tell git your name, so that it can properly label the commits 
 
 
 <pre><code>E-Mail
-Git saves your email address into the commits you make. We use the email address to associate your commits with your GitHub account.
+   Git saves your email address into the commits you make. We use the email address to associate your commits with your GitHub account.
 </code></pre>
 
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>git config --global user.email "your_email@example.com"
 </span><span class='line'>  # Sets the default email for git to use when you commit</span></code></pre></td></tr></table></div></figure>
+
+
+<pre><code>To see all settings
+</code></pre>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>git config --list</span></code></pre></td></tr></table></div></figure>
 
 
 

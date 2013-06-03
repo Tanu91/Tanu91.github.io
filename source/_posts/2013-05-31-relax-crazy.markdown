@@ -17,12 +17,13 @@ Step 1: Install Git
 	$ sudo apt-get insatll git
 	{% endcodeblock %}
 	
- sudo-  for administrative previlages.
-apt-get - Package Installer, puts stuff from repositries and install them 
-	
- Now it's time to configure your settings. To do this you need to open an app called Terminal.
+ sudo ->  for administrative previlages.
 
-* USERNAME
+apt-get-> Package Installer, puts stuff from repositries and install them 
+	
+Now it's time to configure your settings. To do this you need to open an app called Terminal.
+
+*USERNAME
    First you need to tell git your name, so that it can properly label the commits you make.
 	
 	{% codeblock %}
@@ -30,14 +31,14 @@ apt-get - Package Installer, puts stuff from repositries and install them
 	# Sets the default name for git to use when you commit
 	{% endcodeblock %}
 	
-* E-Mail
+*E-Mail
    Git saves your email address into the commits you make. We use the email address to associate your commits with your GitHub account.
 	{% codeblock %}
 	$git config --global user.email "your_email@example.com"
 	# Sets the default email for git to use when you commit
 	{% endcodeblock %}
 
-* To see all settings
+*To see all settings
 	
 	{% codeblock %}
 	$git config --list
@@ -45,7 +46,6 @@ apt-get - Package Installer, puts stuff from repositries and install them
 	
 Step 2: Install RVM
 
-	
 RVM is Ruby Version Manager.It allows us to install and manage different versions and implementations of ruby on one computer including ability to manage different sets of Ruby gems on each.Thus, allowing to test our application with different versions of ruby setups.
 	
 Run the following command from your terminal.Be sure to follow any subsequent instructions as guided by the installation process.

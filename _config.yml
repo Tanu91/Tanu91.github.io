@@ -104,7 +104,7 @@ navigation:
 - text: Home
   url: /index.html
 - text: Archives
-  url: /archive.html
+  url: /archive_post.html
 
 - text: About
   url: /about.html

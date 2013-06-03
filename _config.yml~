@@ -106,4 +106,6 @@ navigation:
 - text: Archives
   url: /archive.html
 
+- text: About
+  url: /about.html
 

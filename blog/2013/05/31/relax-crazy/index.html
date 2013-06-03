@@ -109,7 +109,7 @@ GIT is a distributed Version Control System(VCS). This allows non-linear develop
 <p>Step 1: Install Git</p>
 
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>sudo apt-get insatll git</span></code></pre></td></tr></table></div></figure>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$sudo apt-get insatll git</span></code></pre></td></tr></table></div></figure>
 
 
 <pre><code>  sudo-  for administrative previlages.
@@ -123,7 +123,7 @@ GIT is a distributed Version Control System(VCS). This allows non-linear develop
 
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>git config --global user.name "Your Name Here"
+</pre></td><td class='code'><pre><code class=''><span class='line'>$git config --global user.name "Your Name Here"
 </span><span class='line'>  # Sets the default name for git to use when you commit</span></code></pre></td></tr></table></div></figure>
 
 
@@ -133,7 +133,7 @@ GIT is a distributed Version Control System(VCS). This allows non-linear develop
 
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>git config --global user.email "your_email@example.com"
+</pre></td><td class='code'><pre><code class=''><span class='line'>$git config --global user.email "your_email@example.com"
 </span><span class='line'>  # Sets the default email for git to use when you commit</span></code></pre></td></tr></table></div></figure>
 
 
@@ -141,26 +141,44 @@ GIT is a distributed Version Control System(VCS). This allows non-linear develop
 </code></pre>
 
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>git config --list</span></code></pre></td></tr></table></div></figure>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$git config --list</span></code></pre></td></tr></table></div></figure>
 
 
-<p>Step 1: Install RVM</p>
+<p>Step 2: Install RVM</p>
 
 <pre><code>RVM is Ruby Version Manager. It allows us to install and manage different versions and implementations of ruby on one computer including ability to manage different sets of Ruby gems on each.Thus, allowing to test our application with different versions of ruby setups.
+
 Run the following command from your terminal.Be sure to follow any subsequent instructions as guided by the installation process.
-</code></pre>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>curl -L https://get.rvm.io | bash -s stable --ruby</span></code></pre></td></tr></table></div></figure>
 
 
-<pre><code>curl is a client to get document/file or send to server using any of supported protocols.
+The above command will install both RVM and the latest version of Ruby.
+curl is a client to get document/file or send to server using any of supported protocols.
 
 If the above command produces an error, run following command from ypur terminal to achieve the same.
 </code></pre>
 
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>$wget --no-check-certificate https://raw.github.com/joshfng/railsready/master/railsready.sh && bash railsready.sh</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Step 3: Install Ruby 1.9.3</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>rvm install 1.9.3
+</span><span class='line'>  rvm use 1.9.3
+</span><span class='line'>  rvm rubygems latest</span></code></pre></td></tr></table></div></figure>
+
+
+<pre><code>Gems contain package information along with files to install.
+RubyGems. It is a package manager which became part of the standard library in Ruby 1.9. It allows developers to search, install and build gems, among other features. All of this is done by using the gem command-line utility.
+
+*Run ruby --version to be sure you’re using Ruby 1.9.3. If you’re having trouble, run the following command on your terminal to set your default version of ruby-1.9.3
+</code></pre>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$rvm --default use ruby-1.9.3-p429</span></code></pre></td></tr></table></div></figure>
 
 
 

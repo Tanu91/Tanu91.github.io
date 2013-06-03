@@ -19,7 +19,6 @@ Step 1: Install Git
 	Now it's time to configure your settings. To do this you need to open an app called Terminal.
 
 	USERNAME
-
 	First you need to tell git your name, so that it can properly label the commits you make.
 	
 	{% codeblock %}
@@ -28,7 +27,6 @@ Step 1: Install Git
 	{% endcodeblock %}
 	
 	E-Mail
-
 	Git saves your email address into the commits you make. We use the email address to associate your commits with your GitHub account.
 	{% codeblock %}
 	git config --global user.email "your_email@example.com"

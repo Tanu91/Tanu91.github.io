@@ -19,26 +19,27 @@ Step 1: Install Git
 	
  sudo ->  for administrative previlages.
 
-apt-get-> Package Installer, puts stuff from repositries and install them 
+apt-get-> Package Installer, puts stuff from repositries and install them.
 	
+
 Now it's time to configure your settings. To do this you need to open an app called Terminal.
 
-*USERNAME
-   First you need to tell git your name, so that it can properly label the commits you make.
+* USERNAME :- 
+    First you need to tell git your name, so that it can properly label the commits you make.
 	
 	{% codeblock %}
 	$ git config --global user.name "Your Name Here"
 	# Sets the default name for git to use when you commit
 	{% endcodeblock %}
 	
-*E-Mail
-   Git saves your email address into the commits you make. We use the email address to associate your commits with your GitHub account.
+* E-Mail :-
+    Git saves your email address into the commits you make. We use the email address to associate your commits with your GitHub account.
 	{% codeblock %}
 	$git config --global user.email "your_email@example.com"
 	# Sets the default email for git to use when you commit
 	{% endcodeblock %}
 
-*To see all settings
+* To see all settings :- 
 	
 	{% codeblock %}
 	$git config --list
@@ -73,7 +74,7 @@ Step 3: Install Ruby 1.9.3
 
 Gems contain package information along with files to install RubyGems.It is a package manager which became part of the standard library in Ruby 1.9. It allows developers to search,install and build gems, among other features. All of this is done by using the gem command-line utility.
 
-* Run ruby --version to be sure you’re using Ruby 1.9.3. If you’re having trouble, run the following command on your terminal to set your default version of ruby-1.9.3
+* Run ruby - -version to be sure you’re using Ruby 1.9.3. If you’re having trouble, run the following command on your terminal to set your default version of ruby-1.9.3
 
 	{% codeblock %}
 	$rvm --default use ruby-1.9.3-p429
@@ -88,9 +89,10 @@ Step 4: Setup Octopress
 	git clone git://github.com/imathis/octopress.git octopress
 	{% endcodeblock %}	
 	
-	  The above command replaces octopress with username.github.com.
 
-	* Next we need to change current working directory to octopress.
+The above command replaces octopress with username.github.com.
+
+* Next we need to change current working directory to octopress.
 	
 	{% codeblock %}
    	 $cd octopress    # You'll be asked if you trust the .rvmrc file (say yes).
@@ -98,18 +100,18 @@ Step 4: Setup Octopress
 
 	{% endcodeblock %}
  
-	* Next, install dependencies.
+* Next, install dependencies.
 
-	  Using Bundler to manage your gem’s dependencies is also pretty easy.
-	  Bundler is a program for managing gem dependencies in your Ruby projects. With Bundler you can specify which gems your program needs.
+Using Bundler to manage your gem’s dependencies is also pretty easy.Bundler is a program for managing gem dependencies in your Ruby projects. With Bundler you can specify which gems your program needs.
 
 	{% codeblock %}
 	$gem install bundler
 	{% endcodeblock %}
 
-	  This should be the only gem you need to install yourself should all your programs' dependencies be managed by Bundler.
+This should be the only gem you need to install yourself should all your programs' dependencies be managed by Bundler.
 
-	  Now,Install the dependencies specified in your Gemfile 
+
+Now,Install the dependencies specified in your Gemfile 
 
 	{% codeblock %}
 	$bundle install 

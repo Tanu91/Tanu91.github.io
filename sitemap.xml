@@ -2,26 +2,42 @@
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
         <loc>http://Tanu91.github.io/blog/2013/05/30/creating-a-github-blog-using-octopress/</loc>
-        <lastmod>2013-05-31T14:48:42+05:30</lastmod>
+        <lastmod>2013-06-03T21:33:29+05:30</lastmod>
     </url>
     <url>
         <loc>http://Tanu91.github.io/blog/2013/05/30/honey-world/</loc>
-        <lastmod>2013-05-31T14:26:05+05:30</lastmod>
+        <lastmod>2013-06-03T21:33:29+05:30</lastmod>
     </url>
     <url>
         <loc>http://Tanu91.github.io/blog/2013/05/31/relax-crazy/</loc>
-        <lastmod>2013-06-01T00:44:30+05:30</lastmod>
+        <lastmod>2013-06-03T21:47:28+05:30</lastmod>
     </url>
     <url>
         <loc>http://Tanu91.github.io/blog/archives/</loc>
-        <lastmod>2013-06-01T00:44:30+05:30</lastmod>
+        <lastmod>2013-06-03T21:47:28+05:30</lastmod>
+    </url>
+    <url>
+        <loc>http://Tanu91.github.io/archive.html</loc>
+        <lastmod>2013-06-03T21:33:29+05:30</lastmod>
+    </url>
+    <url>
+        <loc>http://Tanu91.github.io/about.html</loc>
+        <lastmod>2013-06-03T21:33:29+05:30</lastmod>
+    </url>
+    <url>
+        <loc>http://Tanu91.github.io/about/</loc>
+        <lastmod>2013-06-03T21:33:29+05:30</lastmod>
     </url>
     <url>
         <loc>http://Tanu91.github.io/robots.txt</loc>
         <lastmod>2013-05-31T14:17:53+05:30</lastmod>
     </url>
     <url>
+        <loc>http://Tanu91.github.io/new-page/</loc>
+        <lastmod>2013-06-03T21:33:29+05:30</lastmod>
+    </url>
+    <url>
         <loc>http://Tanu91.github.io/</loc>
-        <lastmod>2013-06-01T00:44:30+05:30</lastmod>
+        <lastmod>2013-06-03T21:47:28+05:30</lastmod>
     </url>
 </urlset>

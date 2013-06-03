@@ -4,7 +4,7 @@
   <title><![CDATA[Relax -Crazy]]></title>
   <link href="http://Tanu91.github.io/atom.xml" rel="self"/>
   <link href="http://Tanu91.github.io/"/>
-  <updated>2013-06-01T00:44:58+05:30</updated>
+  <updated>2013-06-03T21:47:58+05:30</updated>
   <id>http://Tanu91.github.io/</id>
   <author>
     <name><![CDATA[Tanu]]></name>
@@ -14,24 +14,44 @@
 
   
   <entry>
-    <title type="html"><![CDATA[Relax Crazy]]></title>
+    <title type="html"><![CDATA[Setting Up Octopress-BLOGGING fRAMEWORK]]></title>
     <link href="http://Tanu91.github.io/blog/2013/05/31/relax-crazy/"/>
     <updated>2013-05-31T14:50:00+05:30</updated>
     <id>http://Tanu91.github.io/blog/2013/05/31/relax-crazy</id>
-    <content type="html"><![CDATA[<p>this is a blog for crazy bloggers to relax
-<img src="http://placekitten.com/890/280"></p>
+    <content type="html"><![CDATA[<p><img class="left" src="http://cdn.tutsplus.com/webdesign.tutsplus.com/authors/ian-yates/octopress-header.png" width="150" height="250"></p>
 
-<figure class='code'><figcaption><span>Discover if a number is prime</span><a href='http://www.noulakaz.net/weblog/2007/03/18/a-regular-expression-to-check-for-prime-numbers/'>Source Article</a></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<p> You should be comfortable running shell commands and familiar with the basics of GIT.
+GIT is a distributed Version Control System(VCS). This allows non-linear development of projects and can handle large amount of data effectively by storing it on Local Server.</p>
+
+<p>Step 1: Install Git</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo apt-get insatll git</span></code></pre></td></tr></table></div></figure>
+
+
+<pre><code>sudo- for administrative previlages.
+apt-get - Package Installer, puts stuff from repositries and        install them 
+
+Now it's time to configure your settings. To do this you need to open an app called Terminal.
+
+USERNAME
+First you need to tell git your name, so that it can properly label the commits you make.
+</code></pre>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="k">class</span> <span class="nc">Fixnum</span>
-</span><span class='line'>  <span class="k">def</span> <span class="nf">prime?</span>
-</span><span class='line'>    <span class="p">(</span><span class="s1">&#39;1&#39;</span> <span class="o">*</span> <span class="nb">self</span><span class="p">)</span> <span class="o">!~</span> <span class="sr">/^1?$|^(11+?)\1+$/</span>
-</span><span class='line'>  <span class="k">end</span>
-</span><span class='line'><span class="k">end</span>
-</span></code></pre></td></tr></table></div></figure>
+</pre></td><td class='code'><pre><code class=''><span class='line'>git config --global user.name "Your Name Here"
+</span><span class='line'>  # Sets the default name for git to use when you commit</span></code></pre></td></tr></table></div></figure>
+
+
+<pre><code>E-Mail
+Git saves your email address into the commits you make. We use the email address to associate your commits with your GitHub account.
+</code></pre>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>git config --global user.email "your_email@example.com"
+</span><span class='line'>  # Sets the default email for git to use when you commit</span></code></pre></td></tr></table></div></figure>
 
 
 

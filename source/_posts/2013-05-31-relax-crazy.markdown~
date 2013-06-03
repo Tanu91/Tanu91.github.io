@@ -50,7 +50,10 @@ Step 2: Install RVM
 	
 	Run the following command from your terminal.Be sure to follow any subsequent instructions as guided by the installation process.
 
-	
+	{% codeblock %}
+	$curl -L https://get.rvm.io | bash -s stable --ruby
+	{% endcodeblock %}
+
 	The above command will install both RVM and the latest version of Ruby.
 	curl is a client to get document/file or send to server using any of supported protocols.
 
@@ -69,7 +72,15 @@ Step 3: Install Ruby 1.9.3
 	{% endcodeblock %}
 
 	Gems contain package information along with files to install.
-	RubyGems is a package manager for the Ruby programming language that provides a standard format for distributing Ruby programs and libraries (in a self-contained format called a "gem"), a tool designed to easily manage the installation of gems, and a server for distributing them.RubyGems is very similar to apt-get in functionality.
+	RubyGems. It is a package manager which became part of the standard library in Ruby 1.9. It allows developers to search, install and build gems, among other features. All of this is done by using the gem command-line utility.
+
+	* Run ruby --version to be sure you’re using Ruby 1.9.3. If you’re having trouble, run the following command on your terminal to set your default version of ruby-1.9.3
+
+	{% codeblock %}
+	$rvm --default use ruby-1.9.3-p429
+	{% endcodeblock %}
+
+
 
 	 
 

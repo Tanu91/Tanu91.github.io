@@ -129,11 +129,11 @@ GIT is a distributed Version Control System(VCS). This allows non-linear develop
 
 
 <pre><code>  sudo-  for administrative previlages.
-apt-get - Package Installer, puts stuff from repositries and install them 
+ apt-get - Package Installer, puts stuff from repositries and install them 
 
-Now it's time to configure your settings. To do this you need to open an app called Terminal.
+ Now it's time to configure your settings. To do this you need to open an app called Terminal.
 
-USERNAME
+* USERNAME
     First you need to tell git your name, so that it can properly label the commits you make.
 </code></pre>
 
@@ -143,7 +143,7 @@ USERNAME
 </span><span class='line'>  # Sets the default name for git to use when you commit</span></code></pre></td></tr></table></div></figure>
 
 
-<pre><code>E-Mail
+<pre><code>* E-Mail
    Git saves your email address into the commits you make. We use the email address to associate your commits with your GitHub account.
 </code></pre>
 
@@ -153,11 +153,30 @@ USERNAME
 </span><span class='line'>  # Sets the default email for git to use when you commit</span></code></pre></td></tr></table></div></figure>
 
 
-<pre><code>To see all settings
+<pre><code>* To see all settings
 </code></pre>
 
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>git config --list</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Step 1: Install RVM</p>
+
+<pre><code>RVM is Ruby Version Manager. It allows us to install and manage different versions and implementations of ruby on one computer including ability to manage different sets of Ruby gems on each.Thus, allowing to test our application with different versions of ruby setups.
+Run the following command from your terminal.Be sure to follow any subsequent instructions as guided by the installation process.
+</code></pre>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>curl -L https://get.rvm.io | bash -s stable --ruby</span></code></pre></td></tr></table></div></figure>
+
+
+<pre><code>curl is a client to get document/file or send to server using any of supported protocols.
+
+If the above command produces an error, run following command from ypur terminal to achieve the same.
+</code></pre>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$wget --no-check-certificate https://raw.github.com/joshfng/railsready/master/railsready.sh && bash railsready.sh</span></code></pre></td></tr></table></div></figure>
 
 
 

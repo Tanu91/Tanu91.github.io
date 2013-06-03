@@ -165,16 +165,20 @@ GIT is a distributed Version Control System(VCS). This allows non-linear develop
 <pre><code>RVM is Ruby Version Manager. It allows us to install and manage different versions and implementations of ruby on one computer including ability to manage different sets of Ruby gems on each.Thus, allowing to test our application with different versions of ruby setups.
 
 Run the following command from your terminal.Be sure to follow any subsequent instructions as guided by the installation process.
+</code></pre>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$curl -L https://get.rvm.io | bash -s stable --ruby</span></code></pre></td></tr></table></div></figure>
 
 
-The above command will install both RVM and the latest version of Ruby.
+<pre><code>The above command will install both RVM and the latest version of Ruby.
 curl is a client to get document/file or send to server using any of supported protocols.
 
 If the above command produces an error, run following command from ypur terminal to achieve the same.
 </code></pre>
 
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>$wget --no-check-certificate https://raw.github.com/joshfng/railsready/master/railsready.sh && bash railsready.sh</span></code></pre></td></tr></table></div></figure>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$wget --no-check-certificate https://raw.github.com/joshfng/railsready/master/railsready.sh && bash railsready.sh # You, will be asked to choose option (Enter your choice as 1)</span></code></pre></td></tr></table></div></figure>
 
 
 <p>Step 3: Install Ruby 1.9.3</p>
@@ -190,11 +194,50 @@ If the above command produces an error, run following command from ypur terminal
 <pre><code>Gems contain package information along with files to install.
 RubyGems. It is a package manager which became part of the standard library in Ruby 1.9. It allows developers to search, install and build gems, among other features. All of this is done by using the gem command-line utility.
 
-*Run ruby --version to be sure you’re using Ruby 1.9.3. If you’re having trouble, run the following command on your terminal to set your default version of ruby-1.9.3
+* Run ruby --version to be sure you’re using Ruby 1.9.3. If you’re having trouble, run the following command on your terminal to set your default version of ruby-1.9.3
 </code></pre>
 
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>$rvm --default use ruby-1.9.3-p429</span></code></pre></td></tr></table></div></figure>
+
+
+<pre><code>If ruby --version doesn’t say you’re using Ruby 1.9.3, revisit your RVM installation.
+</code></pre>
+
+<p>Step 4: Setup Octopress</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>git clone git://github.com/imathis/octopress.git octopress</span></code></pre></td></tr></table></div></figure>
+
+
+<pre><code>The above command replaces octopress with username.github.com.
+
+* Next we need to change current working directory to octopress.
+</code></pre>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>cd octopress    # You'll be asked if you trust the .rvmrc file (say yes).
+</span><span class='line'>  ruby --version  # Should report Ruby 1.9.3</span></code></pre></td></tr></table></div></figure>
+
+
+<pre><code>* Next, install dependencies.
+
+Using Bundler to manage your gem’s dependencies is also pretty easy.
+Bundler is a program for managing gem dependencies in your Ruby projects. With Bundler you can specify which gems your program needs.
+</code></pre>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$gem install bundler</span></code></pre></td></tr></table></div></figure>
+
+
+<pre><code>This should be the only gem you need to install yourself should all your programs' dependencies be managed by Bundler.
+
+ Now,Install the dependencies specified in your Gemfile 
+</code></pre>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$bundle install</span></code></pre></td></tr></table></div></figure>
 
 
 

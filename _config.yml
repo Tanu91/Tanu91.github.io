@@ -104,4 +104,4 @@ navigation:
 - text: Home
   url: /index.html
 -text: About
-  url: /about.markdown
+  url: /about.md

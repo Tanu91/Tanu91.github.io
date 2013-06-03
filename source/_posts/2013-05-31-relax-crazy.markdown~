@@ -8,13 +8,17 @@ categories:
 {% img left http://cdn.tutsplus.com/webdesign.tutsplus.com/authors/ian-yates/octopress-header.png 150 250 %}
 
 
- You should be comfortable running shell commands and familiar with the basics of Git.
+ You should be comfortable running shell commands and familiar with the basics of GIT.
+GIT is a distributed Version Control System(VCS). This allows non-linear development of projects and can handle large amount of data effectively by storing it on Local Server.
 
 Step 1: Install Git
 	
 	{% codeblock %}
 	sudo apt-get insatll git
 	{% endcodeblock %}
+	
+	sudo- for administrative previlages.
+	apt-get - Package Installer, puts stuff from repositries and 		install them 
 	
 	Now it's time to configure your settings. To do this you need to open an app called Terminal.
 

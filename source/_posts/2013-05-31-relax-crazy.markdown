@@ -151,7 +151,7 @@ We can use SSH keys to establish a secure connection between your computer and G
 To generate a new SSH key, enter the code below. We want the default settings so when asked to enter a file in which to save the key, just press enter
        {% codeblock %}
 	$ssh-keygen -t rsa -C "your_email@example.com"
-    # Creates a new ssh key, using the provided email as a label
+   # Creates a new ssh key, using the provided email as a label
   # Generating public/private rsa key pair.
   # Enter file in which to save the key (/home/you/.ssh/id_rsa):
 	{% endcodeblock %}
@@ -166,15 +166,59 @@ Now you need to enter a passphrase.
 {% codeblock %}
 	Your identification has been saved in /home/you/.ssh/id_rsa.
  # Your public key has been saved in /home/you/.ssh/id_rsa.pub.
-  # The key fingerprint is:
+ # The key fingerprint is:
  # 01:0f:f4:3b:ca:85:d6:17:a1:7d:f0:68:9d:f0:a2:db    your_email@example.com
 	{% endcodeblock %}
+* Add your SSH -key to GitHub
 
-* Github Pages for users and organizations uses the master branch like the public directory on a web server, serving up the files at your Pages url http://username.github.com. As a result, you’ll want to work on the source for your blog in the source branch and commit the generated content to the master branch. Octopress has a configuration task that helps you set all this up.
+    * Go to your Account Settings.
+
+ {% img  https://github-images.s3.amazonaws.com/help/userbar-account-settings.png 150 200 %}
+    * Click "SSH Keys" in the left sidebar 
+{% img  https://github-images.s3.amazonaws.com/help/settings-sidebar-ssh-keys.png 150 200 %}
+    * Click "Add SSH key" 
+    * Paste your key into the "Key" field 
+{% img  https://github-images.s3.amazonaws.com/help/ssh-key-paste.png 150 200 %}
+    * Click "Add key".
+    * Confirm the action by entering your GitHub password.
+
+To make sure everything is working you'll now SSH to GitHub. When you do this, you will be asked to authenticate this action using your password, which for this purpose is the passphrase you created earlier.
+{%codeblock%}
+ $ssh -T git@github.com
+ # Attempts to ssh to github
+{%endcodeblock%}
+
+You may see this warning:
+{%codeblock%}
+ # The authenticity of host 'github.com (207.97.227.239)' can't be established.
+ # RSA key fingerprint is 16:27:ac:a5:76:28:2d:36:63:1b:56:4d:eb:df:a6:48.
+ # Are you sure you want to continue connecting (yes/no)?
+{%endcodeblock%}
+
+Don't worry, this is supposed to happen. Verify that the fingerprint matches the one here and type "yes".
+
+
+
+{%codeblock%}
+ # Hi username! You've successfully authenticated, but GitHub does not
+ # provide shell access.
+{%endcodeblock%}
+
+If that username is correct, you've successfully set up your SSH key. Don't worry about the shell access thing, you don't want that anyway.
+If Not correct ,To Add Authenticity and again check Authenticity.
+{%codeblock%}
+ssh-add
+
+{%endcodeblock%}
+
+
+
+
+* Github Pages for users and organizations uses the master branch like the public directory on a web server, serving up the files at your Pages . As a result, you’ll want to work on the source for your blog in the source branch and commit the generated content to the master branch. Octopress has a configuration task that helps you set all this up.
 
        {% codeblock %}
 	$rake setup_github_pages 
 	{% endcodeblock %}
 * This will Ask you for your Github Pages repository url. 
-
+{%endcodeblock%}
 

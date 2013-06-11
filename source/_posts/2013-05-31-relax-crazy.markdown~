@@ -126,7 +126,7 @@ Rake is a Make-like program implemented in Ruby. Tasks and dependencies are spec
 
 Step 5: Deploying with Github User/Organization Pages
 
-Creating Github User/Organization Pages
+* Creating Github User/Organization Pages
 
     * Create a new Github repository and name the repository with your username.github.com or organization.github.com.
 
@@ -144,5 +144,37 @@ Creating Github User/Organization Pages
 
     * When you find a theme that you like, click Publish
 
+
+* Generating SSH - keys
+  
+We can use SSH keys to establish a secure connection between your computer and GitHub.
+To generate a new SSH key, enter the code below. We want the default settings so when asked to enter a file in which to save the key, just press enter
+       {% codeblock %}
+	$ssh-keygen -t rsa -C "your_email@example.com"
+   # Creates a new ssh key, using the provided email as a label
+  # Generating public/private rsa key pair.
+  # Enter file in which to save the key (/home/you/.ssh/id_rsa):
+	{% endcodeblock %}
+
+Now you need to enter a passphrase.
+
+    {% codeblock %}
+	Enter passphrase (empty for no passphrase): [Type a passphrase]
+    # Enter same passphrase again: [Type passphrase again 
+	{% endcodeblock %}
+
+{% codeblock %}
+	Your identification has been saved in /home/you/.ssh/id_rsa.
+ # Your public key has been saved in /home/you/.ssh/id_rsa.pub.
+ # The key fingerprint is:
+ # 01:0f:f4:3b:ca:85:d6:17:a1:7d:f0:68:9d:f0:a2:db    your_email@example.com
+	{% endcodeblock %}
+
+* Github Pages for users and organizations uses the master branch like the public directory on a web server, serving up the files at your Pages . As a result, you’ll want to work on the source for your blog in the source branch and commit the generated content to the master branch. Octopress has a configuration task that helps you set all this up.
+
+       {% codeblock %}
+	$rake setup_github_pages 
+	{% endcodeblock %}
+* This will Ask you for your Github Pages repository url. 
 
 

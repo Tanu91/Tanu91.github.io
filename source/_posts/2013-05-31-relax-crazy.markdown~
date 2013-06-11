@@ -160,7 +160,7 @@ Now you need to enter a passphrase.
 
     {% codeblock %}
 	Enter passphrase (empty for no passphrase): [Type a passphrase]
-    # Enter same passphrase again: [Type passphrase again 
+    # Enter same passphrase again: [Type passphrase again]
 	{% endcodeblock %}
 
 {% codeblock %}

@@ -220,5 +220,5 @@ ssh-add
 	$rake setup_github_pages 
 	{% endcodeblock %}
 * This will Ask you for your Github Pages repository url. 
-{%endcodeblock%}
+
 

@@ -4,7 +4,7 @@
   <title><![CDATA[Relax -Crazy]]></title>
   <link href="http://Tanu91.github.io/atom.xml" rel="self"/>
   <link href="http://Tanu91.github.io/"/>
-  <updated>2013-06-11T23:52:04+05:30</updated>
+  <updated>2013-06-11T23:54:26+05:30</updated>
   <id>http://Tanu91.github.io/</id>
   <author>
     <name><![CDATA[Tanu]]></name>
@@ -169,18 +169,20 @@ curl is a client to get document/file or send to server using any of supported p
 <pre><code>* Create a new Github repository and name the repository with your username.github.com or organization.github.com.
 
 * Switch over to new repository created in previous step. Click on Settings Tab , scroll down to Github pages and click on "Automatic Page generator" button.
+</code></pre>
 
-&lt;img src="https://github-images.s3.amazonaws.com/help/repo-actions-settings.png" width="250" height="250"&gt;
+<p> <img src="https://github-images.s3.amazonaws.com/help/repo-actions-settings.png" width="250" height="250"></p>
 
-* Author your content in the Markdown editor.
+<pre><code>* Author your content in the Markdown editor.
 
 * Click the Continue To Layouts button.
 
 * Preview your content in our themes.
+</code></pre>
 
-&lt;img src="https://github-images.s3.amazonaws.com/blog/2012/page-generator-picker.png" width="350" height="350"&gt;
+<p><img src="https://github-images.s3.amazonaws.com/blog/2012/page-generator-picker.png" width="350" height="350"></p>
 
-* When you find a theme that you like, click Publish
+<pre><code>* When you find a theme that you like, click Publish
 </code></pre>
 ]]></content>
   </entry>

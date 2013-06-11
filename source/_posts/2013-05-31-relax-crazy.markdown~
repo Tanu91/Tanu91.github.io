@@ -111,10 +111,24 @@ Using Bundler to manage your gem’s dependencies is also pretty easy.Bundler is
 This should be the only gem you need to install yourself should all your programs' dependencies be managed by Bundler.
 
 
-Now,Install the dependencies specified in your Gemfile 
+* Now,Install the dependencies specified in your Gemfile 
 
 	{% codeblock %}
 	$bundle install 
 	{% endcodeblock %}
 
+* Install the default Octopress theme.
+
+	{% codeblock %}
+	$rake install 
+	{% endcodeblock %}
+Rake is a Make-like program implemented in Ruby. Tasks and dependencies are specified in standard Ruby syntax. A rake file is a collection of tasks, when you call rake with an argument (in this case install) that's the task that get's executed.
+
+Step 5: Deploying with Github User/Organization Pages
+
+
+{% blockquote  https://github.com/new Create new repository%}
+1. Create a new Github repository and name the repository with your username.github.com or organization.github.com.
+
+{% endblockquote %}
 

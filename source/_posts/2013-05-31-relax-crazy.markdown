@@ -132,7 +132,7 @@ Step 5: Deploying with Github User/Organization Pages
 
 2. Switch over to new repository created in previous step. Click on Settings Tab , scroll down to Github pages and click on "Automatic Page generator" button.
 
-{% img right https://github-images.s3.amazonaws.com/help/repo-actions-settings.png 250 250 %}
+{% img  https://github-images.s3.amazonaws.com/help/repo-actions-settings.png 250 250 %}
 
 3. Author your content in the Markdown editor.
 
@@ -140,7 +140,7 @@ Step 5: Deploying with Github User/Organization Pages
 
 5. Preview your content in our themes.
 
-{% img right https://github-images.s3.amazonaws.com/blog/2012/page-generator-picker.png 350 350 %}
+{% img  https://github-images.s3.amazonaws.com/blog/2012/page-generator-picker.png 350 350 %}
 
 6. When you find a theme that you like, click Publish
 

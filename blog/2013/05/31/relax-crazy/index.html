@@ -245,12 +245,16 @@ curl is a client to get document/file or send to server using any of supported p
 
 <p>Step 5: Deploying with Github User/Organization Pages</p>
 
-<p>Creating Github User/Organization Pages</p>
+<ul>
+<li><p>Creating Github User/Organization Pages</p>
 
-<pre><code>* Create a new Github repository and name the repository with your username.github.com or organization.github.com.
+<ul>
+<li><p>Create a new Github repository and name the repository with your username.github.com or organization.github.com.</p></li>
+<li><p>Switch over to new repository created in previous step. Click on Settings Tab , scroll down to Github pages and click on &ldquo;Automatic Page generator&rdquo; button.</p></li>
+</ul>
+</li>
+</ul>
 
-* Switch over to new repository created in previous step. Click on Settings Tab , scroll down to Github pages and click on "Automatic Page generator" button.
-</code></pre>
 
 <p> <img src="https://github-images.s3.amazonaws.com/help/repo-actions-settings.png" width="250" height="250"></p>
 
@@ -265,6 +269,58 @@ curl is a client to get document/file or send to server using any of supported p
 
 <pre><code>* When you find a theme that you like, click Publish
 </code></pre>
+
+<ul>
+<li>Generating SSH &ndash; keys</li>
+</ul>
+
+
+<p>We can use SSH keys to establish a secure connection between your computer and GitHub.
+To generate a new SSH key, enter the code below. We want the default settings so when asked to enter a file in which to save the key, just press enter</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ssh-keygen -t rsa -C "your_email@example.com"
+</span><span class='line'>    # Creates a new ssh key, using the provided email as a label
+</span><span class='line'>  # Generating public/private rsa key pair.
+</span><span class='line'>  # Enter file in which to save the key (/home/you/.ssh/id_rsa):</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Now you need to enter a passphrase.</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>Enter passphrase (empty for no passphrase): [Type a passphrase]
+</span><span class='line'>    # Enter same passphrase again: [Type passphrase again</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>Your identification has been saved in /home/you/.ssh/id_rsa.
+</span><span class='line'> # Your public key has been saved in /home/you/.ssh/id_rsa.pub.
+</span><span class='line'>  # The key fingerprint is:
+</span><span class='line'> # 01:0f:f4:3b:ca:85:d6:17:a1:7d:f0:68:9d:f0:a2:db    your_email@example.com</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li>Github Pages for users and organizations uses the master branch like the public directory on a web server, serving up the files at your Pages url <a href="http://username.github.com.">http://username.github.com.</a> As a result, you’ll want to work on the source for your blog in the source branch and commit the generated content to the master branch. Octopress has a configuration task that helps you set all this up.</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$rake setup_github_pages</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li>This will Ask you for your Github Pages repository url.</li>
+</ul>
+
 
     </div>
   </div>

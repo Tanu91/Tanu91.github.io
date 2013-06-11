@@ -127,8 +127,22 @@ Rake is a Make-like program implemented in Ruby. Tasks and dependencies are spec
 Step 5: Deploying with Github User/Organization Pages
 
 
-{% blockquote  https://github.com/new Create new repository%}
+{% blockquote  https://github.com/new %}
 1. Create a new Github repository and name the repository with your username.github.com or organization.github.com.
+
+2. Switch over to new repository created in previous step. Click on Settings Tab , scroll down to Github pages and click on "Automatic Page generator" button.
+
+{% img right https://github-images.s3.amazonaws.com/help/repo-actions-settings.png 150 250 %}
+
+3. Author your content in the Markdown editor.
+
+4. Click the Continue To Layouts button.
+
+5. Preview your content in our themes.
+
+{% img right https://github-images.s3.amazonaws.com/blog/2012/page-generator-picker.png 150 350 %}
+
+6. When you find a theme that you like, click Publish
 
 {% endblockquote %}
 

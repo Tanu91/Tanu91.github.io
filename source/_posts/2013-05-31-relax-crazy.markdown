@@ -4,7 +4,10 @@ title: "Setting Up Octopress-BLOGGING Framework"
 date: 2013-05-31 14:50
 comments: true
 categories: 
+
+
 ---
+<A HREF="http://www.copyscape.com/plagiarism-tool/"><IMG SRC="http://banners.copyscape.com/images/cs-re-3d-120x60.gif" ALT="Protected by Copyscape Web Plagiarism Tool" TITLE="Protected by Copyscape Plagiarism Checker - Do not copy content from this page." WIDTH="120" HEIGHT="60" BORDER="0"></A>
 {% img left http://cdn.tutsplus.com/webdesign.tutsplus.com/authors/ian-yates/octopress-header.png 150 250 %}
 
 

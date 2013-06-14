@@ -141,7 +141,7 @@ Step 5: Deploying with Github User/Organization Pages
 
   * Click the Continue To Layouts button.
 
-  * Preview your content in our themes.{% img https://github-images.s3.amazonaws.com/blog/2012/page-generator-picker.png 250 250 %}
+  * Preview your content in our themes.{% img right https://github-images.s3.amazonaws.com/blog/2012/page-generator-picker.png 250 250 %}
 
   * When you find a theme that you like, click Publish
 
@@ -172,16 +172,13 @@ Now you need to enter a passphrase.
 	{% endcodeblock %}
 * Add your SSH -key to GitHub
 
-    * Go to your Account Settings.
+   * Go to your Account Settings.  {% img  https://github-images.s3.amazonaws.com/help/userbar-account-settings.png 150 200 %}
 
- {% img  https://github-images.s3.amazonaws.com/help/userbar-account-settings.png 150 200 %}
-    * Click "SSH Keys" in the left sidebar 
-{% img  https://github-images.s3.amazonaws.com/help/settings-sidebar-ssh-keys.png 150 200 %}
-    * Click "Add SSH key" 
-    * Paste your key into the "Key" field 
-{% img  https://github-images.s3.amazonaws.com/help/ssh-key-paste.png 150 200 %}
-    * Click "Add key".
-    * Confirm the action by entering your GitHub password.
+   * Click "SSH Keys" in the left sidebar. {% img  https://github-images.s3.amazonaws.com/help/settings-sidebar-ssh-keys.png 150 200 %}
+   * Click "Add SSH key" 
+   * Paste your key into the "Key" field. {% img  https://github-images.s3.amazonaws.com/help/ssh-key-paste.png 200 200 %}
+   * Click "Add key".
+   * Confirm the action by entering your GitHub password.
 
 To make sure everything is working you'll now SSH to GitHub. When you do this, you will be asked to authenticate this action using your password, which for this purpose is the passphrase you created earlier.
 {%codeblock%}

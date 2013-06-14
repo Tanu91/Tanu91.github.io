@@ -133,9 +133,9 @@ Step 5: Deploying with Github User/Organization Pages
 
 * Creating Github User/Organization Pages
 
-    * Create a new Github repository and name the repository with your username.github.com or organization.github.com.
-
-    * Switch over to new repository created in previous step. Click on Settings Tab , scroll down to Github pages and click on "Automatic Page generator" button.
+      * Create a new Github repository and name the repository with your username.github.com or organization.github.com.
+ 
+      * Switch over to new repository created in previous step. Click on Settings Tab , scroll down to Github pages and click on "Automatic Page generator" button.
 
  {% img  https://github-images.s3.amazonaws.com/help/repo-actions-settings.png 250 250 %}
 

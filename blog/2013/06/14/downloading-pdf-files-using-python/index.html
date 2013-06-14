@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Downloading PDF using python - Relax -Crazy</title>
+  <title>Downloading PDF Files Using Python - Relax -Crazy</title>
   <meta name="author" content="Tanu">
 
   
-  <meta name="description" content="Downloading PDF Using Python Jun 14th, 2013 Python Script to Download PDF files Using gspread library retrieving data from spreadsheet and requests &hellip;">
+  <meta name="description" content="Downloading PDF Files Using Python Jun 14th, 2013 Python Script to Download PDF files Using gspread library retrieving data from spreadsheet and &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://Tanu91.github.io/blog/2013/06/14/downloading-pdf-using-python">
+  <link rel="canonical" href="http://Tanu91.github.io/blog/2013/06/14/downloading-pdf-files-using-python">
   <link href="/favicon.png" rel="icon">
   <link href='http://fonts.googleapis.com/css?family=Quicksand:300,400' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
@@ -80,7 +80,7 @@
 
   <header>
   <div class="jumbotron">
-    Downloading PDF Using Python
+    Downloading PDF Files Using Python
 	<h5>
 
 
@@ -93,12 +93,13 @@
   
 
 
-<i class="icon-calendar-empty"></i> <time datetime="2013-06-14T19:54:00+05:30" pubdate data-updated="true">Jun 14<span>th</span>, 2013</time></h5>
+<i class="icon-calendar-empty"></i> <time datetime="2013-06-14T11:35:00+05:30" pubdate data-updated="true">Jun 14<span>th</span>, 2013</time></h5>
   </div>
 </header>
   <div class="row-fluid">
     <div class="span12">
-      <p>Python Script to Download PDF files Using gspread library retrieving data from spreadsheet and requests for downloading it as a zip file. First you need to install python packages &ldquo;gspread&rdquo; and &ldquo;requests&rdquo;.</p>
+      <p>Python Script to Download PDF files Using gspread library retrieving  data from spreadsheet and requests for downloading it as a zip file.
+First you need to install python packages &ldquo;gspread&rdquo; and &ldquo;requests&rdquo;.</p>
 
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
@@ -112,20 +113,18 @@
 <span class='line-number'>10</span>
 <span class='line-number'>11</span>
 <span class='line-number'>12</span>
-<span class='line-number'>13</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>import requests
 </span><span class='line'>import gspread
 </span><span class='line'>gc = gspread.login('Username@gmail.com','Password')
-</span><span class='line'>spreadsheet = gc.open_by_url("Url of Spreadsheet")
+</span><span class='line'>spreadsheet = gc.open_by_url("URL of Spreadsheet")    
 </span><span class='line'>worksheet = spreadsheet.sheet1
-</span><span class='line'>
 </span><span class='line'>cell = worksheet.cell(2, 2)
-</span><span class='line'>value = cell.value
+</span><span class='line'>value = cell.values
 </span><span class='line'>print(value)
 </span><span class='line'>print "downloading with requests"
 </span><span class='line'>r = requests.get(value)
 </span><span class='line'>with open("code.zip", "wb") as code:
-</span><span class='line'>    code.write(r.content)</span></code></pre></td></tr></table></div></figure>
+</span><span class='line'>   code.write(r.content)</span></code></pre></td></tr></table></div></figure>
 
 
 

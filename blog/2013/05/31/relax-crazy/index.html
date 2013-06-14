@@ -99,7 +99,8 @@ GIT is &hellip;">
 </header>
   <div class="row-fluid">
     <div class="span12">
-      <p><img class="left" src="http://cdn.tutsplus.com/webdesign.tutsplus.com/authors/ian-yates/octopress-header.png" width="150" height="250"></p>
+      <p><A HREF="http://www.copyscape.com/plagiarism-tool/"><IMG SRC="http://banners.copyscape.com/images/cs-re-3d-120x60.gif" ALT="Protected by Copyscape Web Plagiarism Tool" TITLE="Protected by Copyscape Plagiarism Checker - Do not copy content from this page." WIDTH="120" HEIGHT="60" BORDER="0"></A>
+<img class="left" src="http://cdn.tutsplus.com/webdesign.tutsplus.com/authors/ian-yates/octopress-header.png" width="150" height="250"></p>
 
 <p> You should be comfortable running shell commands and familiar with the basics of GIT.
 GIT is a distributed Version Control System(VCS). This allows non-linear development of projects and can handle large amount of data effectively by storing it on Local Server.</p>
@@ -107,7 +108,7 @@ GIT is a distributed Version Control System(VCS). This allows non-linear develop
 <p>Step 1: Install Git</p>
 
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>$ sudo apt-get insatll git</span></code></pre></td></tr></table></div></figure>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ sudo apt-get install git</span></code></pre></td></tr></table></div></figure>
 
 
 <p> sudo &ndash;>  for administrative previlages.</p>
@@ -136,7 +137,7 @@ GIT is a distributed Version Control System(VCS). This allows non-linear develop
 
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>$git config --global user.email "your_email@example.com"
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ git config --global user.email "your_email@example.com"
 </span><span class='line'>  # Sets the default email for git to use when you commit</span></code></pre></td></tr></table></div></figure>
 
 
@@ -146,7 +147,7 @@ GIT is a distributed Version Control System(VCS). This allows non-linear develop
 
 
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>$git config --list</span></code></pre></td></tr></table></div></figure>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ git config --list</span></code></pre></td></tr></table></div></figure>
 
 
 <p>Step 2: Install RVM</p>
@@ -156,7 +157,7 @@ GIT is a distributed Version Control System(VCS). This allows non-linear develop
 <p>Run the following command from your terminal.Be sure to follow any subsequent instructions as guided by the installation process.</p>
 
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>$curl -L https://get.rvm.io | bash -s stable --ruby</span></code></pre></td></tr></table></div></figure>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ curl -L https://get.rvm.io | bash -s stable --ruby</span></code></pre></td></tr></table></div></figure>
 
 
 <p>The above command will install both RVM and the latest version of Ruby.
@@ -165,7 +166,7 @@ curl is a client to get document/file or send to server using any of supported p
 <p>If the above command produces an error, run following command from ypur terminal to achieve the same.</p>
 
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>$wget --no-check-certificate https://raw.github.com/joshfng/railsready/master/railsready.sh && bash railsready.sh # You, will be asked to choose option (Enter your choice as 1)</span></code></pre></td></tr></table></div></figure>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ wget --no-check-certificate https://raw.github.com/joshfng/railsready/master/railsready.sh && bash railsready.sh # You, will be asked to choose option (Enter your choice as 1)</span></code></pre></td></tr></table></div></figure>
 
 
 <p>Step 3: Install Ruby 1.9.3</p>
@@ -173,9 +174,9 @@ curl is a client to get document/file or send to server using any of supported p
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>rvm install 1.9.3
-</span><span class='line'>  rvm use 1.9.3
-</span><span class='line'>  rvm rubygems latest</span></code></pre></td></tr></table></div></figure>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ rvm install 1.9.3
+</span><span class='line'>  $ rvm use 1.9.3
+</span><span class='line'>  $ rvm rubygems latest</span></code></pre></td></tr></table></div></figure>
 
 
 <p>Gems contain package information along with files to install RubyGems.It is a package manager which became part of the standard library in Ruby 1.9. It allows developers to search,install and build gems, among other features. All of this is done by using the gem command-line utility.</p>
@@ -186,7 +187,7 @@ curl is a client to get document/file or send to server using any of supported p
 
 
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>$rvm --default use ruby-1.9.3-p429</span></code></pre></td></tr></table></div></figure>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ rvm --default use ruby-1.9.3-p429</span></code></pre></td></tr></table></div></figure>
 
 
 <p>If ruby &mdash;version doesn’t say you’re using Ruby 1.9.3, revisit your RVM installation.</p>
@@ -194,7 +195,7 @@ curl is a client to get document/file or send to server using any of supported p
 <p>Step 4: Setup Octopress</p>
 
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>git clone git://github.com/imathis/octopress.git octopress</span></code></pre></td></tr></table></div></figure>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ git clone git://github.com/imathis/octopress.git octopress</span></code></pre></td></tr></table></div></figure>
 
 
 <p>The above command replaces octopress with username.github.com.</p>
@@ -206,7 +207,7 @@ curl is a client to get document/file or send to server using any of supported p
 
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>$cd octopress    # You'll be asked if you trust the .rvmrc file (say yes).
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ cd octopress    # You'll be asked if you trust the .rvmrc file (say yes).
 </span><span class='line'>  ruby --version  # Should report Ruby 1.9.3</span></code></pre></td></tr></table></div></figure>
 
 
@@ -218,7 +219,7 @@ curl is a client to get document/file or send to server using any of supported p
 <p>Using Bundler to manage your gem’s dependencies is also pretty easy.Bundler is a program for managing gem dependencies in your Ruby projects. With Bundler you can specify which gems your program needs.</p>
 
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>$gem install bundler</span></code></pre></td></tr></table></div></figure>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ gem install bundler</span></code></pre></td></tr></table></div></figure>
 
 
 <p>This should be the only gem you need to install yourself should all your programs&#8217; dependencies be managed by Bundler.</p>
@@ -229,7 +230,7 @@ curl is a client to get document/file or send to server using any of supported p
 
 
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>$bundle install</span></code></pre></td></tr></table></div></figure>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ bundle install</span></code></pre></td></tr></table></div></figure>
 
 
 <ul>
@@ -258,20 +259,18 @@ curl is a client to get document/file or send to server using any of supported p
 
 <p> <img src="https://github-images.s3.amazonaws.com/help/repo-actions-settings.png" width="250" height="250"></p>
 
-<pre><code>* Author your content in the Markdown editor.
+<ul>
+<li><p> Author your content in the Markdown editor.</p></li>
+<li><p> Click the Continue To Layouts button.</p></li>
+<li><p> Preview your content in our themes.</p></li>
+</ul>
 
-* Click the Continue To Layouts button.
-
-* Preview your content in our themes.
-</code></pre>
 
 <p><img src="https://github-images.s3.amazonaws.com/blog/2012/page-generator-picker.png" width="350" height="350"></p>
 
-<pre><code>* When you find a theme that you like, click Publish
-</code></pre>
-
 <ul>
-<li>Generating SSH &ndash; keys</li>
+<li><p> When you find a theme that you like, click Publish</p></li>
+<li><p>Generating SSH &ndash; keys</p></li>
 </ul>
 
 
@@ -430,7 +429,7 @@ If Not correct ,To Add Authenticity and again check Authenticity.</p>
             <a class="basic-alignment left" href="/blog/2013/05/30/creating-a-github-blog-using-octopress/" title="Previous Post: Creating a Github Blog Using Octopress">&laquo; Creating a Github Blog Using Octopress</a>
           
           
-            <a class="basic-alignment right" href="/blog/2013/06/14/downloading-pdf-using-python/" title="Next Post: Downloading PDF using python">Downloading PDF using python &raquo;</a>
+            <a class="basic-alignment right" href="/blog/2013/06/14/downloading-pdf-files-using-python/" title="Next Post: Downloading PDF Files Using Python">Downloading PDF Files Using Python &raquo;</a>
           
         </p>
       </div>

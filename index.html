@@ -343,8 +343,8 @@ curl is a client to get document/file or send to server using any of supported p
 <li><p>Switch over to new repository created in previous step. Click on Settings Tab , scroll down to Github pages and click on &ldquo;Automatic Page generator&rdquo; button. <img src="https://github-images.s3.amazonaws.com/help/repo-actions-settings.png" width="250" height="250"><img class="right" src="https://github-images.s3.amazonaws.com/blog/2012/page-generator-picker.png" width="250" height="250"></p></li>
 <li><p>Author your content in the Markdown editor.</p></li>
 <li><p>Click the Continue To Layouts button.</p></li>
-<li>Preview your content in our themes.</li>
-<li>When you find a theme that you like, click Publish</li>
+<li><p>Preview your content in our themes.</p></li>
+<li><p>When you find a theme that you like, click Publish</p></li>
 </ul>
 </li>
 <li><p>Generating SSH &ndash; keys</p></li>
@@ -442,9 +442,9 @@ If Not correct ,To Add Authenticity and again check Authenticity.</p>
 
 
 <ul>
-<li>This will Ask you for your Github Pages repository url.</li>
-<li>Next run:
-This will generate your blog, copy the generated files into _deploy/, add them to git, commit and push them up to the master branch. In a few seconds you should get an email from Github telling you that your commit has been received and will be published on your site.</li>
+<li><p>This will Ask you for your Github Pages repository url.</p></li>
+<li><p>Next run:
+This will generate your blog, copy the generated files into _deploy/, add them to git, commit and push them up to the master branch. In a few seconds you should get an email from Github telling you that your commit has been received and will be published on your site.</p></li>
 </ul>
 
 
@@ -472,14 +472,14 @@ This will generate your blog, copy the generated files into _deploy/, add them t
 </span><span class='line'>      $git remote show origin
 </span><span class='line'>      $git remote show octopress
 </span><span class='line'>      $git remote rm octopress
-</span><span class='line'>       $git remote rm origin
-</span><span class='line'>       $git remote add origin git@github.com:your_user_nameyour_user_name.github.io.git
-</span><span class='line'>     $git remote -v
-</span><span class='line'>     $git pull origin source
+</span><span class='line'>      $git remote rm origin
+</span><span class='line'>      $git remote add origin git@github.com:your_user_nameyour_user_name.github.io.git
+</span><span class='line'>      $git remote -v
+</span><span class='line'>      $git pull origin source
 </span><span class='line'>      $ git add .
-</span><span class='line'>    $ git commit -m "comment"
-</span><span class='line'>    $ git push origin source
-</span><span class='line'>   $ rake deploy</span></code></pre></td></tr></table></div></figure>
+</span><span class='line'>      $git commit -m "comment"
+</span><span class='line'>      $git push origin source
+</span><span class='line'>      $rake deploy</span></code></pre></td></tr></table></div></figure>
 
 
 

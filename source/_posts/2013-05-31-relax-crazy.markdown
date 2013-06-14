@@ -135,15 +135,15 @@ Step 5: Deploying with Github User/Organization Pages
 
   * Create a new Github repository and name the repository with your username.github.com or organization.github.com.
  
-  * Switch over to new repository created in previous step. Click on Settings Tab , scroll down to Github pages and click on "Automatic Page generator" button. {% img right https://github-images.s3.amazonaws.com/help/repo-actions-settings.png 250 250 %}
+  * Switch over to new repository created in previous step. Click on Settings Tab , scroll down to Github pages and click on "Automatic Page generator" button. {% img https://github-images.s3.amazonaws.com/help/repo-actions-settings.png 250 250 %}
 
- * Author your content in the Markdown editor.
+  * Author your content in the Markdown editor.
 
- * Click the Continue To Layouts button.
+  * Click the Continue To Layouts button.
 
- * Preview your content in our themes.{% img right https://github-images.s3.amazonaws.com/blog/2012/page-generator-picker.png 250 250 %}
+  * Preview your content in our themes.{% img left https://github-images.s3.amazonaws.com/blog/2012/page-generator-picker.png 250 250 %}
 
- * When you find a theme that you like, click Publish
+  * When you find a theme that you like, click Publish
 
 
 * Generating SSH - keys

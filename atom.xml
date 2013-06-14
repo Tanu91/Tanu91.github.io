@@ -4,7 +4,7 @@
   <title><![CDATA[Relax -Crazy]]></title>
   <link href="http://Tanu91.github.io/atom.xml" rel="self"/>
   <link href="http://Tanu91.github.io/"/>
-  <updated>2013-06-14T20:29:53+05:30</updated>
+  <updated>2013-06-14T20:33:36+05:30</updated>
   <id>http://Tanu91.github.io/</id>
   <author>
     <name><![CDATA[Tanu]]></name>
@@ -206,11 +206,10 @@ curl is a client to get document/file or send to server using any of supported p
 <ul>
 <li><p>Creating Github User/Organization Pages</p>
 
-<ul>
-<li><p>Create a new Github repository and name the repository with your username.github.com or organization.github.com.</p></li>
-<li><p>Switch over to new repository created in previous step. Click on Settings Tab , scroll down to Github pages and click on &ldquo;Automatic Page generator&rdquo; button.</p></li>
-</ul>
-</li>
+<pre><code>* Create a new Github repository and name the repository with your username.github.com or organization.github.com.
+
+* Switch over to new repository created in previous step. Click on Settings Tab , scroll down to Github pages and click on "Automatic Page generator" button.
+</code></pre></li>
 </ul>
 
 

@@ -4,7 +4,7 @@
   <title><![CDATA[Relax -Crazy]]></title>
   <link href="http://Tanu91.github.io/atom.xml" rel="self"/>
   <link href="http://Tanu91.github.io/"/>
-  <updated>2013-06-14T23:01:57+05:30</updated>
+  <updated>2013-06-14T23:10:44+05:30</updated>
   <id>http://Tanu91.github.io/</id>
   <author>
     <name><![CDATA[Tanu]]></name>
@@ -311,7 +311,45 @@ If Not correct ,To Add Authenticity and again check Authenticity.</p>
 
 <ul>
 <li>This will Ask you for your Github Pages repository url.</li>
+<li>Next run:
+This will generate your blog, copy the generated files into _deploy/, add them to git, commit and push them up to the master branch. In a few seconds you should get an email from Github telling you that your commit has been received and will be published on your site.</li>
 </ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$git init
+</span><span class='line'>      $rake generate
+</span><span class='line'>      $rake deploy
+</span><span class='line'>      $rake preview
+</span><span class='line'>      $git add .
+</span><span class='line'>      $git remote show origin
+</span><span class='line'>      $git remote show octopress
+</span><span class='line'>      $git remote rm octopress
+</span><span class='line'>       $git remote rm origin
+</span><span class='line'>       $git remote add origin git@github.com:your_user_nameyour_user_name.github.io.git
+</span><span class='line'>     $git remote -v
+</span><span class='line'>     $git pull origin source
+</span><span class='line'>      $ git add .
+</span><span class='line'>    $ git commit -m "comment"
+</span><span class='line'>    $ git push origin source
+</span><span class='line'>   $ rake deploy</span></code></pre></td></tr></table></div></figure>
+
+
 
 ]]></content>
   </entry>

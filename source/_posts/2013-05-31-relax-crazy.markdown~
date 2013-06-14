@@ -1,10 +1,8 @@
 ---
 layout: post
-<<<<<<< HEAD
+
 title: "Setting Up Octopress-BLOGGING FRAMEWORK"
-=======
-title: "Setting Up Octopress-BLOGGING Framework"
->>>>>>> bc5fd51878b8a1fd6c334130de87575ad029df1b
+
 date: 2013-05-31 14:50
 comments: true
 categories: 

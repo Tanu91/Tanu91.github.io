@@ -145,7 +145,7 @@ Step 5: Deploying with Github User/Organization Pages
 
     * Preview your content in our themes.
 
-{% img  https://github-images.s3.amazonaws.com/blog/2012/page-generator-picker.png 350 350 %}
+{% img left https://github-images.s3.amazonaws.com/blog/2012/page-generator-picker.png 350 350 %}
 
     * When you find a theme that you like, click Publish
 

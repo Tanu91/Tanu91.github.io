@@ -1,10 +1,17 @@
 ---
 layout: post
+<<<<<<< HEAD
 title: "Setting Up Octopress-BLOGGING FRAMEWORK"
+=======
+title: "Setting Up Octopress-BLOGGING Framework"
+>>>>>>> bc5fd51878b8a1fd6c334130de87575ad029df1b
 date: 2013-05-31 14:50
 comments: true
 categories: 
+
+
 ---
+<A HREF="http://www.copyscape.com/plagiarism-tool/"><IMG SRC="http://banners.copyscape.com/images/cs-re-3d-120x60.gif" ALT="Protected by Copyscape Web Plagiarism Tool" TITLE="Protected by Copyscape Plagiarism Checker - Do not copy content from this page." WIDTH="120" HEIGHT="60" BORDER="0"></A>
 {% img left http://cdn.tutsplus.com/webdesign.tutsplus.com/authors/ian-yates/octopress-header.png 150 250 %}
 
 
@@ -14,7 +21,7 @@ GIT is a distributed Version Control System(VCS). This allows non-linear develop
 Step 1: Install Git
 	
 	{% codeblock %}
-	$ sudo apt-get insatll git
+	$ sudo apt-get install git
 	{% endcodeblock %}
 	
  sudo ->  for administrative previlages.
@@ -35,14 +42,14 @@ Now it's time to configure your settings. To do this you need to open an app cal
 * E-Mail :-
     Git saves your email address into the commits you make. We use the email address to associate your commits with your GitHub account.
 	{% codeblock %}
-	$git config --global user.email "your_email@example.com"
+	$ git config --global user.email "your_email@example.com"
 	# Sets the default email for git to use when you commit
 	{% endcodeblock %}
 
 * To see all settings :- 
 	
 	{% codeblock %}
-	$git config --list
+	$ git config --list
 	{% endcodeblock %}
 	
 Step 2: Install RVM
@@ -52,7 +59,7 @@ RVM is Ruby Version Manager.It allows us to install and manage different version
 Run the following command from your terminal.Be sure to follow any subsequent instructions as guided by the installation process.
 
 	{% codeblock %}
-	$curl -L https://get.rvm.io | bash -s stable --ruby
+	$ curl -L https://get.rvm.io | bash -s stable --ruby
 	{% endcodeblock %}
 
 The above command will install both RVM and the latest version of Ruby.
@@ -61,15 +68,15 @@ curl is a client to get document/file or send to server using any of supported p
 If the above command produces an error, run following command from ypur terminal to achieve the same.
 	
 	{% codeblock %}
-	$wget --no-check-certificate https://raw.github.com/joshfng/railsready/master/railsready.sh && bash railsready.sh # You, will be asked to choose option (Enter your choice as 1)
+	$ wget --no-check-certificate https://raw.github.com/joshfng/railsready/master/railsready.sh && bash railsready.sh # You, will be asked to choose option (Enter your choice as 1)
 	{% endcodeblock %}
 
 Step 3: Install Ruby 1.9.3	
 	
 	{% codeblock %}
-	 rvm install 1.9.3
-	rvm use 1.9.3
-	rvm rubygems latest
+	$ rvm install 1.9.3
+	$ rvm use 1.9.3
+	$ rvm rubygems latest
 	{% endcodeblock %}
 
 Gems contain package information along with files to install RubyGems.It is a package manager which became part of the standard library in Ruby 1.9. It allows developers to search,install and build gems, among other features. All of this is done by using the gem command-line utility.
@@ -77,7 +84,7 @@ Gems contain package information along with files to install RubyGems.It is a pa
 * Run ruby - -version to be sure you’re using Ruby 1.9.3. If you’re having trouble, run the following command on your terminal to set your default version of ruby-1.9.3
 
 	{% codeblock %}
-	$rvm --default use ruby-1.9.3-p429
+	$ rvm --default use ruby-1.9.3-p429
 	{% endcodeblock %}
 	
 If ruby --version doesn’t say you’re using Ruby 1.9.3, revisit your RVM installation.
@@ -86,7 +93,7 @@ If ruby --version doesn’t say you’re using Ruby 1.9.3, revisit your RVM inst
 Step 4: Setup Octopress
 	
 	{% codeblock %}
-	git clone git://github.com/imathis/octopress.git octopress
+	$ git clone git://github.com/imathis/octopress.git octopress
 	{% endcodeblock %}	
 	
 
@@ -95,7 +102,7 @@ The above command replaces octopress with username.github.com.
 * Next we need to change current working directory to octopress.
 	
 	{% codeblock %}
-   	 $cd octopress    # You'll be asked if you trust the .rvmrc file (say yes).
+   	 $ cd octopress    # You'll be asked if you trust the .rvmrc file (say yes).
 	ruby --version  # Should report Ruby 1.9.3
 
 	{% endcodeblock %}
@@ -105,7 +112,7 @@ The above command replaces octopress with username.github.com.
 Using Bundler to manage your gem’s dependencies is also pretty easy.Bundler is a program for managing gem dependencies in your Ruby projects. With Bundler you can specify which gems your program needs.
 
 	{% codeblock %}
-	$gem install bundler
+	$ gem install bundler
 	{% endcodeblock %}
 
 This should be the only gem you need to install yourself should all your programs' dependencies be managed by Bundler.
@@ -114,7 +121,7 @@ This should be the only gem you need to install yourself should all your program
 * Now,Install the dependencies specified in your Gemfile 
 
 	{% codeblock %}
-	$bundle install 
+	$ bundle install 
 	{% endcodeblock %}
 
 * Install the default Octopress theme.

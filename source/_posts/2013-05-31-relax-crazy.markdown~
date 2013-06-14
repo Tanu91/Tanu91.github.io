@@ -139,10 +139,8 @@ Step 5: Deploying with Github User/Organization Pages
 
   * Author your content in the Markdown editor.
 
-  * Click the Continue To Layouts button.
-
-  * Preview your content in our themes.{% img right https://github-images.s3.amazonaws.com/blog/2012/page-generator-picker.png 250 250 %}
-
+  * Click the Continue To Layouts button.{% img right https://github-images.s3.amazonaws.com/blog/2012/page-generator-picker.png 250 250 %}
+  * Preview your content in our themes.
   * When you find a theme that you like, click Publish
 
 

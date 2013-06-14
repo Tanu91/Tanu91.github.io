@@ -216,5 +216,26 @@ ssh-add
 	$rake setup_github_pages 
 	{% endcodeblock %}
 * This will Ask you for your Github Pages repository url. 
+* Next run:
+  This will generate your blog, copy the generated files into _deploy/, add them to git, commit and push them up to the master branch. In a few seconds you should get an email from Github telling you that your commit has been received and will be published on your site.
+	{% codeblock %}
+      $git init
+      $rake generate
+      $rake deploy
+      $rake preview
+      $git add .
+      $git remote show origin
+      $git remote show octopress
+      $git remote rm octopress
+       $git remote rm origin
+       $git remote add origin git@github.com:your_user_nameyour_user_name.github.io.git
+     $git remote -v
+     $git pull origin source
+      $ git add .
+    $ git commit -m "comment"
+    $ git push origin source
+   $ rake deploy 
+	{% endcodeblock %}
+
 
 

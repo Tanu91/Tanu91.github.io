@@ -4,7 +4,7 @@
   <title><![CDATA[Relax -Crazy]]></title>
   <link href="http://Tanu91.github.io/atom.xml" rel="self"/>
   <link href="http://Tanu91.github.io/"/>
-  <updated>2013-06-14T19:41:06+05:30</updated>
+  <updated>2013-06-14T20:03:12+05:30</updated>
   <id>http://Tanu91.github.io/</id>
   <author>
     <name><![CDATA[Tanu]]></name>
@@ -12,6 +12,45 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Downloading PDF using python]]></title>
+    <link href="http://Tanu91.github.io/blog/2013/06/14/downloading-pdf-using-python/"/>
+    <updated>2013-06-14T19:54:00+05:30</updated>
+    <id>http://Tanu91.github.io/blog/2013/06/14/downloading-pdf-using-python</id>
+    <content type="html"><![CDATA[<p>Python Script to Download PDF files Using gspread library retrieving data from spreadsheet and requests for downloading it as a zip file. First you need to install python packages &ldquo;gspread&rdquo; and &ldquo;requests&rdquo;.</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>import requests
+</span><span class='line'>import gspread
+</span><span class='line'>gc = gspread.login('Username@gmail.com','Password')
+</span><span class='line'>spreadsheet = gc.open_by_url("Url of Spreadsheet")
+</span><span class='line'>worksheet = spreadsheet.sheet1
+</span><span class='line'>
+</span><span class='line'>cell = worksheet.cell(2, 2)
+</span><span class='line'>value = cell.value
+</span><span class='line'>print(value)
+</span><span class='line'>print "downloading with requests"
+</span><span class='line'>r = requests.get(value)
+</span><span class='line'>with open("code.zip", "wb") as code:
+</span><span class='line'>    code.write(r.content)</span></code></pre></td></tr></table></div></figure>
+
+
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Setting Up Octopress-BLOGGING FRAMEWORK]]></title>

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Setting Up Octopress-BLOGGING fRAMEWORK"
+title: "Setting Up Octopress-BLOGGING FRAMEWORK"
 date: 2013-05-31 14:50
 comments: true
 categories: 

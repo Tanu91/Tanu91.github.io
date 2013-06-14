@@ -1,10 +1,17 @@
 ---
 layout: post
+<<<<<<< HEAD
+title: "Setting Up Octopress-BLOGGING FRAMEWORK"
+=======
 title: "Setting Up Octopress-BLOGGING Framework"
+>>>>>>> bc5fd51878b8a1fd6c334130de87575ad029df1b
 date: 2013-05-31 14:50
 comments: true
 categories: 
+
+
 ---
+<A HREF="http://www.copyscape.com/plagiarism-tool/"><IMG SRC="http://banners.copyscape.com/images/cs-re-3d-120x60.gif" ALT="Protected by Copyscape Web Plagiarism Tool" TITLE="Protected by Copyscape Plagiarism Checker - Do not copy content from this page." WIDTH="120" HEIGHT="60" BORDER="0"></A>
 {% img left http://cdn.tutsplus.com/webdesign.tutsplus.com/authors/ian-yates/octopress-header.png 150 250 %}
 
 
@@ -111,11 +118,7 @@ Using Bundler to manage your gem’s dependencies is also pretty easy.Bundler is
 This should be the only gem you need to install yourself should all your programs' dependencies be managed by Bundler.
 
 
-<<<<<<< HEAD
 * Now,Install the dependencies specified in your Gemfile 
-=======
-Now,Install the dependencies specified in your Gemfile 
->>>>>>> bc5fd51878b8a1fd6c334130de87575ad029df1b
 
 	{% codeblock %}
 	$ bundle install 
@@ -138,11 +141,11 @@ Step 5: Deploying with Github User/Organization Pages
 
  {% img  https://github-images.s3.amazonaws.com/help/repo-actions-settings.png 250 250 %}
 
-    * Author your content in the Markdown editor.
+   * Author your content in the Markdown editor.
 
-    * Click the Continue To Layouts button.
+   * Click the Continue To Layouts button.
 
-    * Preview your content in our themes.
+   * Preview your content in our themes.
 
 {% img  https://github-images.s3.amazonaws.com/blog/2012/page-generator-picker.png 350 350 %}
 

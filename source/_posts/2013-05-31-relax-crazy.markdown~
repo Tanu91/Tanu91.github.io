@@ -141,6 +141,7 @@ Step 5: Deploying with Github User/Organization Pages
 
   * Click the Continue To Layouts button.
   * Preview your content in our themes.
+
   * When you find a theme that you like, click Publish
 
 
@@ -216,7 +217,9 @@ ssh-add
 	$rake setup_github_pages 
 	{% endcodeblock %}
 * This will Ask you for your Github Pages repository url. 
+
 * Next run:
+  This will generate your blog, copy the generated files into _deploy/, add them to git, commit and push them up to the master branch. In a few seconds you should get an email from Github telling you that your commit has been received and will be published on your site.
 	{% codeblock %}
       $git init
       $rake generate

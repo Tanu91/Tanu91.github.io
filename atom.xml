@@ -4,7 +4,7 @@
   <title><![CDATA[Relax -Crazy]]></title>
   <link href="http://Tanu91.github.io/atom.xml" rel="self"/>
   <link href="http://Tanu91.github.io/"/>
-  <updated>2013-06-17T16:00:54+05:30</updated>
+  <updated>2013-06-19T22:29:42+05:30</updated>
   <id>http://Tanu91.github.io/</id>
   <author>
     <name><![CDATA[Tanu]]></name>
@@ -12,6 +12,25 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Enabling RSS feeds to Your Blog]]></title>
+    <link href="http://Tanu91.github.io/blog/2013/06/19/enabling-rss-feeds-to-your-blog/"/>
+    <updated>2013-06-19T16:38:00+05:30</updated>
+    <id>http://Tanu91.github.io/blog/2013/06/19/enabling-rss-feeds-to-your-blog</id>
+    <content type="html"><![CDATA[<p> Google Chrome users can use &ldquo; <a href="https://chrome.google.com/webstore/detail/rss-subscription-extensio/nlbjncdgjeocebhnmkbbbdekmmmcbfjdextension">https://chrome.google.com/webstore/detail/rss-subscription-extensio/nlbjncdgjeocebhnmkbbbdekmmmcbfjdextension</a>&rdquo; , while those who favor Firefox can use &ldquo;<a href="https://addons.mozilla.org/en-US/firefox/addon/rss-icon-in-awesombar/?src=search">https://addons.mozilla.org/en-US/firefox/addon/rss-icon-in-awesombar/?src=search</a>&rdquo; to add one-click subscriptions to websites.</p>
+
+<p>This will Add a RSS icon <img src="http://wannabefilm.com/wp-content/uploads/2011/04/RSS-Icon.png" width="100" height="100"></p>
+
+<p>Open Your Blog Hompage i.e. Username.github.io</p>
+
+<p>Click on RSS icon In the Address Bar.</p>
+
+<p>This will Open a New page &ldquo; <a href="http://Username.github.io/atom.xml">http://Username.github.io/atom.xml</a> &rdquo;</p>
+
+<p>The generated link in Address Bar is Your RSS feed URL.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Amazing Anecdote]]></title>

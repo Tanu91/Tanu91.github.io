@@ -7,7 +7,7 @@ categories:
 ---
  Google Chrome users can use " https://chrome.google.com/webstore/detail/rss-subscription-extensio/nlbjncdgjeocebhnmkbbbdekmmmcbfjdextension" , while those who favor Firefox can use "https://addons.mozilla.org/en-US/firefox/addon/rss-icon-in-awesombar/?src=search" to add one-click subscriptions to websites.
 
-This will Add a RSS icon {% img http://wannabefilm.com/wp-content/uploads/2011/04/RSS-Icon.png 50 50 %}
+This will Add a RSS icon {% img http://www.poochplan.com/wp-content/uploads/2011/11/rss-icon_small_53151.jpg 50 50 %}
 
 Open Your Blog Hompage i.e. Username.github.io
 

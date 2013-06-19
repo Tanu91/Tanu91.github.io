@@ -4,7 +4,7 @@
   <title><![CDATA[Relax -Crazy]]></title>
   <link href="http://Tanu91.github.io/atom.xml" rel="self"/>
   <link href="http://Tanu91.github.io/"/>
-  <updated>2013-06-19T22:29:42+05:30</updated>
+  <updated>2013-06-19T22:39:29+05:30</updated>
   <id>http://Tanu91.github.io/</id>
   <author>
     <name><![CDATA[Tanu]]></name>
@@ -20,7 +20,7 @@
     <id>http://Tanu91.github.io/blog/2013/06/19/enabling-rss-feeds-to-your-blog</id>
     <content type="html"><![CDATA[<p> Google Chrome users can use &ldquo; <a href="https://chrome.google.com/webstore/detail/rss-subscription-extensio/nlbjncdgjeocebhnmkbbbdekmmmcbfjdextension">https://chrome.google.com/webstore/detail/rss-subscription-extensio/nlbjncdgjeocebhnmkbbbdekmmmcbfjdextension</a>&rdquo; , while those who favor Firefox can use &ldquo;<a href="https://addons.mozilla.org/en-US/firefox/addon/rss-icon-in-awesombar/?src=search">https://addons.mozilla.org/en-US/firefox/addon/rss-icon-in-awesombar/?src=search</a>&rdquo; to add one-click subscriptions to websites.</p>
 
-<p>This will Add a RSS icon <img src="http://wannabefilm.com/wp-content/uploads/2011/04/RSS-Icon.png" width="100" height="100"></p>
+<p>This will Add a RSS icon <img src="http://wannabefilm.com/wp-content/uploads/2011/04/RSS-Icon.png" width="50" height="50"></p>
 
 <p>Open Your Blog Hompage i.e. Username.github.io</p>
 
@@ -266,7 +266,7 @@ curl is a client to get document/file or send to server using any of supported p
 
 <ul>
 <li><p>Create a new Github repository and name the repository with your username.github.com or organization.github.com.</p></li>
-<li><p>Switch over to new repository created in previous step. Click on Settings Tab , scroll down to Github pages and click on &ldquo;Automatic Page generator&rdquo; button. <img src="https://github-images.s3.amazonaws.com/help/repo-actions-settings.png" width="250" height="250"><img class="right" src="https://github-images.s3.amazonaws.com/blog/2012/page-generator-picker.png" width="250" height="250"></p></li>
+<li><p>Switch over to new repository created in previous step. Click on Settings Tab , scroll down to Github pages and click on &ldquo;Automatic Page generator&rdquo; button. <img src="https://github-images.s3.amazonaws.com/help/repo-actions-settings.png" width="150" height="150"><img class="right" src="https://github-images.s3.amazonaws.com/blog/2012/page-generator-picker.png" width="250" height="250"></p></li>
 <li><p>Author your content in the Markdown editor.</p></li>
 <li><p>Click the Continue To Layouts button.</p></li>
 <li><p>Preview your content in our themes.</p></li>

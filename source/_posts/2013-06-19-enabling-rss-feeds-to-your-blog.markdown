@@ -13,7 +13,7 @@ Open Your Blog Hompage i.e. Username.github.io
 
 Click on RSS icon In the Address Bar.
 
-This will Open a New page http://Username.github.io/atom.xml
+This will Open a New page " http://Username.github.io/atom.xml "
 
 The generated link in Address Bar is Your RSS feed URL. 
 

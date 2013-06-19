@@ -230,7 +230,7 @@ ssh-add
       $git remote show octopress
       $git remote rm octopress
       $git remote rm origin
-      $git remote add origin git@github.com:your_user_nameyour_user_name.github.io.git
+      $git remote add origin git@github.com:your_user_name/your_user_name.github.io.git
       $git remote -v
       $git pull origin source
       $ git add .

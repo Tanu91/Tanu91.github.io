@@ -5,6 +5,7 @@ date: 2013-07-05 21:12
 comments: true
 categories: 
 ---
+This Python script removes Non-alphabetic characters. For e.g "Lorem ipsum(1224)" is converted to "Lorem ipsum" and populated into DataBase
 {% codeblock %}
 import xlrd
 import MySQLdb

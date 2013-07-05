@@ -4,7 +4,7 @@
   <title><![CDATA[Relax -Crazy]]></title>
   <link href="http://Tanu91.github.io/atom.xml" rel="self"/>
   <link href="http://Tanu91.github.io/"/>
-  <updated>2013-06-19T22:45:38+05:30</updated>
+  <updated>2013-07-05T21:13:52+05:30</updated>
   <id>http://Tanu91.github.io/</id>
   <author>
     <name><![CDATA[Tanu]]></name>
@@ -12,6 +12,139 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Python script to remove Non-alphabetic characters from excel &amp; populate into Database]]></title>
+    <link href="http://Tanu91.github.io/blog/2013/07/05/python-script-to-remove-non-alphabetic-characters-from-excel-and-populate-into-database/"/>
+    <updated>2013-07-05T21:12:00+05:30</updated>
+    <id>http://Tanu91.github.io/blog/2013/07/05/python-script-to-remove-non-alphabetic-characters-from-excel-and-populate-into-database</id>
+    <content type="html"><![CDATA[
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+<span class='line-number'>42</span>
+<span class='line-number'>43</span>
+<span class='line-number'>44</span>
+<span class='line-number'>45</span>
+<span class='line-number'>46</span>
+<span class='line-number'>47</span>
+<span class='line-number'>48</span>
+<span class='line-number'>49</span>
+<span class='line-number'>50</span>
+<span class='line-number'>51</span>
+<span class='line-number'>52</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>import xlrd
+</span><span class='line'>import MySQLdb
+</span><span class='line'>import re
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'># Open the workbook and define the worksheet
+</span><span class='line'>book= xlrd.open_workbook("Worksheet_name.xls")
+</span><span class='line'>sheet = book.sheet_by_name("Sheet_Name")
+</span><span class='line'>
+</span><span class='line'># Establish a MySQL connection
+</span><span class='line'>database = MySQLdb.connect (host="localhost", user = User_name"", passwd = "Password", db = "Database_name")
+</span><span class='line'>
+</span><span class='line'># Get the cursor, which is used to traverse the database, line by line
+</span><span class='line'>cursor = database.cursor()
+</span><span class='line'>
+</span><span class='line'># Create the INSERT INTO sql query
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'>query = """INSERT INTO Table_name  VALUES (%s,%s)"""      
+</span><span class='line'>
+</span><span class='line'># Create a For loop to iterate through each row in the XLS file, 
+</span><span class='line'>for r in range(1, sheet.nrows):
+</span><span class='line'>  
+</span><span class='line'>  Column_name1=re.sub("\d+","",sheet.cell(r,0).value).strip(")")   #removes numeric charcters and special charcters ; "()" here
+</span><span class='line'>  Column_name1=Column_name1[:-1]
+</span><span class='line'>  Column_name2=re.sub("\d+","",sheet.cell(r,1).value).strip(")")
+</span><span class='line'>  Column_name2=Column_name2[:-1]
+</span><span class='line'>  
+</span><span class='line'>  # Assign values from each row
+</span><span class='line'>  values =(Column_name1,Column_name2)
+</span><span class='line'>  # Execute sql Query
+</span><span class='line'>  try:
+</span><span class='line'>      
+</span><span class='line'>      cursor.execute(query,values)
+</span><span class='line'>  except:
+</span><span class='line'>      pass
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'># Close the cursor
+</span><span class='line'>cursor.close()
+</span><span class='line'>
+</span><span class='line'># Commit the transaction
+</span><span class='line'>database.commit()
+</span><span class='line'>
+</span><span class='line'># Close the database connection
+</span><span class='line'>database.close()
+</span><span class='line'>
+</span><span class='line'># Print results
+</span><span class='line'>print ""
+</span><span class='line'>print "All Done! Bye, for now."
+</span><span class='line'>print ""</span></code></pre></td></tr></table></div></figure>
+
+
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Prezi Documentation-NAVIK]]></title>
+    <link href="http://Tanu91.github.io/blog/2013/06/21/prezi-documentation-navik/"/>
+    <updated>2013-06-21T15:25:00+05:30</updated>
+    <id>http://Tanu91.github.io/blog/2013/06/21/prezi-documentation-navik</id>
+    <content type="html"><![CDATA[<p><html>
+<body></p>
+
+<iframe src="http://prezi.com/embed/awceusuypdtg/?bgcolor=ffffff&amp;lock_to_path=0&amp;autoplay=0&amp;autohide_ctrls=0&amp;features=undefined&amp;disabled_features=undefined" width="550" height="400" frameBorder="0"></iframe>
+
+
+<p></html>
+</body></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Enabling RSS feeds to Your Blog]]></title>

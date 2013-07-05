@@ -9,8 +9,6 @@ categories:
 import xlrd
 import MySQLdb
 import re
-
-
 # Open the workbook and define the worksheet
 book= xlrd.open_workbook("Worksheet_name.xls")
 sheet = book.sheet_by_name("Sheet_Name")

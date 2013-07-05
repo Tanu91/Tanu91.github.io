@@ -1,10 +1,9 @@
 ---
 layout: post
-title: "Python script to remove Non-alphabetic characters from excel populate into Database"
-date: 2013-07-05 20:51
+title: "Python script to remove Non-alphabetic characters from excel &amp; populate into Database"
+date: 2013-07-05 21:12
 comments: true
 categories: 
-This python script uses "re module" to remove Non-alphabetic characters. For e.g. "lorem ipsum(1233)" is converted to "lorem ipsum".
 ---
 {% codeblock %}
 import xlrd

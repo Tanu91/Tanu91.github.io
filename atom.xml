@@ -4,7 +4,7 @@
   <title><![CDATA[Relax -Crazy]]></title>
   <link href="http://Tanu91.github.io/atom.xml" rel="self"/>
   <link href="http://Tanu91.github.io/"/>
-  <updated>2013-07-05T21:16:13+05:30</updated>
+  <updated>2013-07-05T21:27:56+05:30</updated>
   <id>http://Tanu91.github.io/</id>
   <author>
     <name><![CDATA[Tanu]]></name>
@@ -18,7 +18,7 @@
     <link href="http://Tanu91.github.io/blog/2013/07/05/python-script-to-remove-non-alphabetic-characters-from-excel-and-populate-into-database/"/>
     <updated>2013-07-05T21:12:00+05:30</updated>
     <id>http://Tanu91.github.io/blog/2013/07/05/python-script-to-remove-non-alphabetic-characters-from-excel-and-populate-into-database</id>
-    <content type="html"><![CDATA[
+    <content type="html"><![CDATA[<p>This Python script removes Non-alphabetic characters. For e.g &ldquo;Lorem ipsum(1224)&rdquo; is converted to &ldquo;Lorem ipsum&rdquo; and populated into DataBase</p>
 
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>

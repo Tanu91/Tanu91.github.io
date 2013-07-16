@@ -4,7 +4,7 @@
   <title><![CDATA[Relax -Crazy]]></title>
   <link href="http://Tanu91.github.io/atom.xml" rel="self"/>
   <link href="http://Tanu91.github.io/"/>
-  <updated>2013-07-05T21:27:56+05:30</updated>
+  <updated>2013-07-16T21:11:51+05:30</updated>
   <id>http://Tanu91.github.io/</id>
   <author>
     <name><![CDATA[Tanu]]></name>
@@ -12,6 +12,65 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Pagiantion using PHP]]></title>
+    <link href="http://Tanu91.github.io/blog/2013/07/16/pagiantion-using-php/"/>
+    <updated>2013-07-16T20:58:00+05:30</updated>
+    <id>http://Tanu91.github.io/blog/2013/07/16/pagiantion-using-php</id>
+    <content type="html"><![CDATA[<p>Script used for pagianation</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;?php
+</span><span class='line'>include 'connect.php';  # Include your Database connection script
+</span><span class='line'>
+</span><span class='line'>$per_page = 10;  # No. of rows to be displyed per page
+</span><span class='line'>$pages_query= mysql_query("SELECT COUNT(*) FROM Table_Name"); # Count the total number of rows In table
+</span><span class='line'>$pages=ceil(mysql_result($pages_query,0)/$per_page);
+</span><span class='line'>$page = (isset($_GET['page'])) ? (int)$_GET['page'] : 1;  #to set default page as 1
+</span><span class='line'>$start = ($page - 1) * $per_page;   # Resolving for next rows to be displayed per page
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'>$query = mysql_query("SELECT Column_Names from Table_name LIMIT $start, $per_page");  # limit the number of rows to be displyed per-page
+</span><span class='line'>while ($row = mysql_fetch_assoc($query)) {
+</span><span class='line'> echo "$row['column_name'];    # echo values
+</span><span class='line'>      echo "&lt;br>";
+</span><span class='line'>}
+</span><span class='line'>
+</span><span class='line'>if($pages>=1 && $page&lt;=$pages){   
+</span><span class='line'>for($x=1; $x&lt;=$pages ;$x++){
+</span><span class='line'>echo ($x == $page) ? '&lt;strong>&lt;a href="?page='.$x.'">'.$x.'&lt;/a> &lt;/strong>' : '&lt;a href="?page='.$x.'">'.$x.'&lt;/a> ';  # Visualize current link strong
+</span><span class='line'>   }
+</span><span class='line'>}
+</span><span class='line'>
+</span><span class='line'>?></span></code></pre></td></tr></table></div></figure>
+
+
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Python script to remove Non-alphabetic characters from excel &amp; populate into Database]]></title>

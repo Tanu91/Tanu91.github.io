@@ -6,7 +6,7 @@ comments: true
 categories: 
 ---
 Python Script to Download PDF files Using gspread library retrieving  data from spreadsheet and requests for downloading it as a zip file.
-First you need to install python packages "gspread" and "requests".   
+First you need to install python packages "gspread" and "requests".
 
 {% codeblock %}
 import requests
@@ -20,5 +20,5 @@ print(value)
 print "downloading with requests"
 r = requests.get(value)
 with open("code.zip", "wb") as code:
-   code.write(r.content)			
+   code.write(r.content)
 {% endcodeblock %}

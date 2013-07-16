@@ -8,8 +8,6 @@ categories:
 
 Script used for pagianation 
 {% codeblock %}
-	
-	
 <?php
 include 'connect.php';  # Include your Database connection script
 
@@ -33,5 +31,4 @@ echo ($x == $page) ? '<strong><a href="?page='.$x.'">'.$x.'</a> </strong>' : '<a
 }
 
 ?>
-
 {% endcodeblock %}

@@ -57,6 +57,4 @@ database.close()
 print ""
 print "All Done! Bye, for now."
 print ""
-
-
 {% endcodeblock %}

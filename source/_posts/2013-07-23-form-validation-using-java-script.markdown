@@ -10,6 +10,8 @@ Each field in the form can have zero one or more validations. For example, you c
 
 
 Steps to embed the form validation script:-
+
+
 1.Include gen_validatorv4.js in your html file just before closing the HEAD tag
        {% codeblock %}
 	<script src="gen_validatorv4.js" type="text/javascript"></script>

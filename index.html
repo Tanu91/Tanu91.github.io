@@ -119,18 +119,15 @@
 Each field in the form can have zero one or more validations. For example, you can have an input field that should not be empty, should be less than 25 chars and should be alpha-numeric.</p>
 
 <p>Steps to embed the form validation script:&ndash;
- 1. Include gen_validatorv4.js in your html file just before closing the HEAD tag</p>
+1.Include gen_validatorv4.js in your html file just before closing the HEAD tag</p>
 
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>&lt;script src="gen_validatorv4.js" type="text/javascript">&lt;/script>
-</span><span class='line'>        &lt;/head></span></code></pre></td></tr></table></div></figure>
+</span><span class='line'>     &lt;/head></span></code></pre></td></tr></table></div></figure>
 
 
-<ol>
-<li>Just after defining your form, create a Validator() object passing the name of the form</li>
-</ol>
-
+<p>2.Just after defining your form, create a Validator() object passing the name of the form</p>
 
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
@@ -144,10 +141,7 @@ Each field in the form can have zero one or more validations. For example, you c
 </span><span class='line'>       var frmvalidator  = new Validator("myform");     //where myform is the name/id of your form</span></code></pre></td></tr></table></div></figure>
 
 
-<ol>
-<li>Now, add the validations required. The format of the addValidation() function is:</li>
-</ol>
-
+<p>3.Now, add the validations required. The format of the addValidation() function is:</p>
 
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>frmvalidator.addValidation(Field Name, Validation Descriptor, Error String);</span></code></pre></td></tr></table></div></figure>
@@ -158,7 +152,7 @@ Each field in the form can have zero one or more validations. For example, you c
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>frmvalidator.addValidation("FirstName","req","Please enter your First Name");
-</span><span class='line'>   frmvalidator.addValidation("FirstName","maxlen=40","Max length for FirstName is 40");</span></code></pre></td></tr></table></div></figure>
+</span><span class='line'>  frmvalidator.addValidation("FirstName","maxlen=40","Max length for FirstName is 40");</span></code></pre></td></tr></table></div></figure>
 
 
 

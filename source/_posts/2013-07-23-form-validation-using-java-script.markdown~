@@ -30,3 +30,9 @@ Steps to embed the form validation script:-
  	 {% codeblock %}
 	frmvalidator.addValidation(Field Name, Validation Descriptor, Error String);
        {% endcodeblock %}
+   
+   For e.g  , Adding validation to FirstNanme as a reuired field and limiting maximum length to 40.
+   {% codeblock %}   
+   frmvalidator.addValidation("FirstName","req","Please enter your First Name");
+   frmvalidator.addValidation("FirstName","maxlen=40","Max length for FirstName is 40");
+    {% endcodeblock %}    

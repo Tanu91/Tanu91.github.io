@@ -10,23 +10,23 @@ Each field in the form can have zero one or more validations. For example, you c
 
 
 Steps to embed the form validation script:-
- 1. Include gen_validatorv4.js in your html file just before closing the HEAD tag
+1.Include gen_validatorv4.js in your html file just before closing the HEAD tag
        {% codeblock %}
 	<script src="gen_validatorv4.js" type="text/javascript"></script>
-        </head>
+     </head>
 	{% endcodeblock %}
 	
- 2. Just after defining your form, create a Validator() object passing the name of the form
+2.Just after defining your form, create a Validator() object passing the name of the form
        {% codeblock %}
 	
-        <form id='myform' action="">
+            <form id='myform' action="">
        <!----Your input fields go here -->
         </form>
        <script type="text/javascript">
        var frmvalidator  = new Validator("myform");     //where myform is the name/id of your form
 	{% endcodeblock %}
 	
- 3. Now, add the validations required. The format of the addValidation() function is:
+3.Now, add the validations required. The format of the addValidation() function is:
  	 {% codeblock %}
 	frmvalidator.addValidation(Field Name, Validation Descriptor, Error String);
        {% endcodeblock %}
@@ -34,5 +34,5 @@ Steps to embed the form validation script:-
    For e.g  , Adding validation to FirstNanme as a reuired field and limiting maximum length to 40.
    {% codeblock %}   
    frmvalidator.addValidation("FirstName","req","Please enter your First Name");
-   frmvalidator.addValidation("FirstName","maxlen=40","Max length for FirstName is 40");
+  frmvalidator.addValidation("FirstName","maxlen=40","Max length for FirstName is 40");
     {% endcodeblock %}    

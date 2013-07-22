@@ -9,20 +9,7 @@
   <meta name="author" content="Tanu">
 
   
-  <meta name="description" content="Hi. I&#8217;m Tanu. Here are some thoughts of mine. Jul 16th, 2013 Pagiantion using PHP Script used for pagianation 1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14 &hellip;">
+  <meta name="description" content="Hi. I&#8217;m Tanu. Here are some thoughts of mine. Jul 23rd, 2013 Form Validation Using Java-Script In order to validate a field, you just &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -97,6 +84,96 @@
 
 <div class="blog-index">
   
+  
+  
+    <article>
+      
+
+  <div class="row-fluid">
+    <div class="span2">
+		<h1 class="date-time">
+
+
+
+
+
+
+
+
+  
+
+
+<i class="icon-calendar-empty"></i> <time datetime="2013-07-23T00:26:00+05:30" pubdate data-updated="true">Jul 23<span>rd</span>, 2013</time></h5>
+          <div class="row-fluid">
+          
+          </div>
+          
+          <div class="row-fluid">
+          
+          </div>
+          
+    </div>
+    <div class="span10">
+      <h1 class="link"><a href="/blog/2013/07/23/form-validation-using-java-script/">Form Validation Using Java-Script</a></h1>
+      <p>In order to validate a field, you just associate a set of validation descriptors for each input field in the form.
+Each field in the form can have zero one or more validations. For example, you can have an input field that should not be empty, should be less than 25 chars and should be alpha-numeric.</p>
+
+<p>Steps to embed the form validation script:&ndash;
+ 1. Include gen_validatorv4.js in your html file just before closing the HEAD tag</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;script src="gen_validatorv4.js" type="text/javascript">&lt;/script>
+</span><span class='line'>        &lt;/head></span></code></pre></td></tr></table></div></figure>
+
+
+<ol>
+<li>Just after defining your form, create a Validator() object passing the name of the form</li>
+</ol>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;form id='myform' action="">
+</span><span class='line'>       &lt;!----Your input fields go here -->
+</span><span class='line'>        &lt;/form>
+</span><span class='line'>       &lt;script type="text/javascript">
+</span><span class='line'>       var frmvalidator  = new Validator("myform");     //where myform is the name/id of your form</span></code></pre></td></tr></table></div></figure>
+
+
+<ol>
+<li>Now, add the validations required. The format of the addValidation() function is:</li>
+</ol>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>frmvalidator.addValidation(Field Name, Validation Descriptor, Error String);</span></code></pre></td></tr></table></div></figure>
+
+
+<p>   For e.g  , Adding validation to FirstNanme as a reuired field and limiting maximum length to 40.</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>frmvalidator.addValidation("FirstName","req","Please enter your First Name");
+</span><span class='line'>   frmvalidator.addValidation("FirstName","maxlen=40","Max length for FirstName is 40");</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+      
+      
+    </div>
+  </div>
+
+
+
+    </article>
+    
+    <hr>
+    
   
   
     <article>

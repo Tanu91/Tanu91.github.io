@@ -5,35 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Pagiantion using PHP - Relax -Crazy</title>
+  <title>Form Validation Using Java-Script - Relax -Crazy</title>
   <meta name="author" content="Tanu">
 
   
-  <meta name="description" content="Pagiantion Using PHP Jul 16th, 2013 Script used for pagianation 1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-&lt;?php
-include ' &hellip;">
+  <meta name="description" content="Form Validation Using Java-Script Jul 23rd, 2013 In order to validate a field, you just associate a set of validation descriptors for each input &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -42,7 +18,7 @@ include ' &hellip;">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://Tanu91.github.io/blog/2013/07/16/pagiantion-using-php">
+  <link rel="canonical" href="http://Tanu91.github.io/blog/2013/07/23/form-validation-using-java-script">
   <link href="/favicon.png" rel="icon">
   <link href='http://fonts.googleapis.com/css?family=Quicksand:300,400' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
@@ -104,7 +80,7 @@ include ' &hellip;">
 
   <header>
   <div class="jumbotron">
-    Pagiantion Using PHP
+    Form Validation Using Java-Script
 	<h5>
 
 
@@ -117,59 +93,55 @@ include ' &hellip;">
   
 
 
-<i class="icon-calendar-empty"></i> <time datetime="2013-07-16T20:58:00+05:30" pubdate data-updated="true">Jul 16<span>th</span>, 2013</time></h5>
+<i class="icon-calendar-empty"></i> <time datetime="2013-07-23T00:26:00+05:30" pubdate data-updated="true">Jul 23<span>rd</span>, 2013</time></h5>
   </div>
 </header>
   <div class="row-fluid">
     <div class="span12">
-      <p>Script used for pagianation</p>
+      <p>In order to validate a field, you just associate a set of validation descriptors for each input field in the form.
+Each field in the form can have zero one or more validations. For example, you can have an input field that should not be empty, should be less than 25 chars and should be alpha-numeric.</p>
+
+<p>Steps to embed the form validation script:&ndash;
+ 1. Include gen_validatorv4.js in your html file just before closing the HEAD tag</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;script src="gen_validatorv4.js" type="text/javascript">&lt;/script>
+</span><span class='line'>        &lt;/head></span></code></pre></td></tr></table></div></figure>
+
+
+<ol>
+<li>Just after defining your form, create a Validator() object passing the name of the form</li>
+</ol>
+
 
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>
 <span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-<span class='line-number'>17</span>
-<span class='line-number'>18</span>
-<span class='line-number'>19</span>
-<span class='line-number'>20</span>
-<span class='line-number'>21</span>
-<span class='line-number'>22</span>
-<span class='line-number'>23</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;?php
-</span><span class='line'>include 'connect.php';  # Include your Database connection script
-</span><span class='line'>
-</span><span class='line'>$per_page = 10;  # No. of rows to be displyed per page
-</span><span class='line'>$pages_query= mysql_query("SELECT COUNT(*) FROM Table_Name"); # Count the total number of rows In table
-</span><span class='line'>$pages=ceil(mysql_result($pages_query,0)/$per_page);
-</span><span class='line'>$page = (isset($_GET['page'])) ? (int)$_GET['page'] : 1;  #to set default page as 1
-</span><span class='line'>$start = ($page - 1) * $per_page;   # Resolving for next rows to be displayed per page
-</span><span class='line'>
-</span><span class='line'>
-</span><span class='line'>$query = mysql_query("SELECT Column_Names from Table_name LIMIT $start, $per_page");  # limit the number of rows to be displyed per-page
-</span><span class='line'>while ($row = mysql_fetch_assoc($query)) {
-</span><span class='line'> echo "$row['column_name'];    # echo values
-</span><span class='line'>      echo "&lt;br>";
-</span><span class='line'>}
-</span><span class='line'>
-</span><span class='line'>if($pages>=1 && $page&lt;=$pages){   
-</span><span class='line'>for($x=1; $x&lt;=$pages ;$x++){
-</span><span class='line'>echo ($x == $page) ? '&lt;strong>&lt;a href="?page='.$x.'">'.$x.'&lt;/a> &lt;/strong>' : '&lt;a href="?page='.$x.'">'.$x.'&lt;/a> ';  # Visualize current link strong
-</span><span class='line'>   }
-</span><span class='line'>}
-</span><span class='line'>
-</span><span class='line'>?></span></code></pre></td></tr></table></div></figure>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;form id='myform' action="">
+</span><span class='line'>       &lt;!----Your input fields go here -->
+</span><span class='line'>        &lt;/form>
+</span><span class='line'>       &lt;script type="text/javascript">
+</span><span class='line'>       var frmvalidator  = new Validator("myform");     //where myform is the name/id of your form</span></code></pre></td></tr></table></div></figure>
+
+
+<ol>
+<li>Now, add the validations required. The format of the addValidation() function is:</li>
+</ol>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>frmvalidator.addValidation(Field Name, Validation Descriptor, Error String);</span></code></pre></td></tr></table></div></figure>
+
+
+<p>   For e.g  , Adding validation to FirstNanme as a reuired field and limiting maximum length to 40.</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>frmvalidator.addValidation("FirstName","req","Please enter your First Name");
+</span><span class='line'>   frmvalidator.addValidation("FirstName","maxlen=40","Max length for FirstName is 40");</span></code></pre></td></tr></table></div></figure>
 
 
 
@@ -219,10 +191,8 @@ include ' &hellip;">
       <div class="span12">
         <p class="meta">
           
-            <a class="basic-alignment left" href="/blog/2013/07/05/python-script-to-remove-non-alphabetic-characters-from-excel-and-populate-into-database/" title="Previous Post: Python script to remove Non-alphabetic characters from excel &amp; populate into Database">&laquo; Python script to remove Non-alphabetic characters from excel &amp; populate into Database</a>
+            <a class="basic-alignment left" href="/blog/2013/07/16/pagiantion-using-php/" title="Previous Post: Pagiantion using PHP">&laquo; Pagiantion using PHP</a>
           
-          
-            <a class="basic-alignment right" href="/blog/2013/07/23/form-validation-using-java-script/" title="Next Post: Form Validation Using Java-Script">Form Validation Using Java-Script &raquo;</a>
           
         </p>
       </div>
